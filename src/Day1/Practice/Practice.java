@@ -20,7 +20,7 @@ public class Practice {
         System.out.println("Malika");
 
         System.out.println("Arthur");
-        System.out.println("BO");
+        
 
 
         System.out.println("Manuchehr");
