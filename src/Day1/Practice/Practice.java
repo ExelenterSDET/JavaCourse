@@ -27,8 +27,12 @@ public class Practice {
         System.out.println("AnthonyHermann");
         System.out.println("JamesFinal");
 
+
         System.out.println("ArthurAgain");
 
+
+
+        System.out.println("ManuchehrSaidov");
 
 
         System.out.println("Manuchehr");
@@ -36,7 +40,7 @@ public class Practice {
         System.out.println("BahodurBOT 231");
 
 
-
+        System.out.println("test1000");
 
     }
 }
