@@ -1,5 +1,7 @@
 package Day1.Practice;
 
+import java.sql.SQLOutput;
+
 public class Practice {
     public static void main(String[] args) {
 
@@ -19,8 +21,18 @@ public class Practice {
 
         System.out.println("Arthur");
         System.out.println("BO");
+        System.out.println("James");
+
+
+        System.out.println("AnthonyHermann");
+        System.out.println("JamesFinal");
 
         System.out.println("ManuchehrSaidov");
+
+        System.out.println("Manuchehr");
+       System.out.println("AnthonyHermann");
+        System.out.println("BahodurBOT 231");
+
 
 
     }
