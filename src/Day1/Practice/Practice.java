@@ -19,13 +19,16 @@ public class Practice {
 
         System.out.println("Malika");
 
-        System.out.println("Arthur");
+        System.out.println("ArthurAgain");
         System.out.println("BO");
         System.out.println("James");
 
 
         System.out.println("AnthonyHermann");
         System.out.println("JamesFinal");
+
+        System.out.println("ArthurAgain");
+
 
 
         System.out.println("Manuchehr");
