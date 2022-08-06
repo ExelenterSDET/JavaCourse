@@ -19,7 +19,7 @@ public class Practice {
 
         System.out.println("Malika");
 
-        System.out.println("Arthur");
+        System.out.println("ArthurAgain");
         System.out.println("BO");
         System.out.println("James");
 
@@ -27,7 +27,13 @@ public class Practice {
         System.out.println("AnthonyHermann");
         System.out.println("JamesFinal");
 
+
+        System.out.println("ArthurAgain");
+
+
+
         System.out.println("ManuchehrSaidov");
+
 
         System.out.println("Manuchehr");
        System.out.println("AnthonyHermann");
@@ -35,6 +41,6 @@ public class Practice {
 
 
         System.out.println("test1000");
-=======
+
     }
 }
