@@ -5,6 +5,7 @@ public class Practice {
 
         System.out.println("Pushing from Said feature");
         
-        System.out.println("test")
+        System.out.println("test");
+        System.out.println("Furkat Ali");
     }
 }
