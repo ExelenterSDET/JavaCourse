@@ -10,7 +10,12 @@ public class Practice {
         System.out.println("Furkat Ali");
 
         System.out.println("Andrea");
+
         System.out.println("Malika");
+
+        System.out.println("Arthur");
+
+        
 
     }
 }
