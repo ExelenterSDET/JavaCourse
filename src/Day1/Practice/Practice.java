@@ -8,5 +8,6 @@ public class Practice {
         System.out.println("test");
         
         System.out.println("Furkat Ali");
-    }
+
+        System.out.println("Andrea");    }
 }
