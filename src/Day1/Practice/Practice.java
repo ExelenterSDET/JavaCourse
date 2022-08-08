@@ -34,6 +34,7 @@ public class Practice {
         System.out.println("BahodurBOT 231");
         System.out.println("test1000");
         System.out.println("Bakridin");
+        System.out.print("new changes");
 
 
     }
