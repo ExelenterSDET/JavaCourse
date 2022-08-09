@@ -17,6 +17,8 @@ public class Hamid {
         System.out.println(" \"Hello world\"\t Hi \\ ");
 
 
+        System.out.println(total);
+
 
 
     }
