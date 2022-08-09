@@ -8,6 +8,7 @@ public class JavaIntro {
         System.out.println("My name is Furkat My age is " + 40);
         System.out.println("My name is Furkat My age is 40");
 
+
     }
 }
 
