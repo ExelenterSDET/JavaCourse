@@ -1,10 +1,14 @@
 package Day1.Java;
 
-public class JavaIntro {
+public class Byte {
     public static void main(String[] args) {
-        System.out.println("Test");
+
+        byte min = -128;
+        byte max = 127;
+
 
 
 
     }
+
 }
