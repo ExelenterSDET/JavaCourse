@@ -16,5 +16,8 @@ public class JavaPracticeDilnozaHw {
          */
 
         System.out.println("Some testing");
-        System.out.println("Modification to push");    }
+        System.out.println("Modification to push");
+        System.out.println("whatever goes here");
+
+    }
 }
