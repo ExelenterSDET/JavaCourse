@@ -1,8 +1,6 @@
-package Day1.Practice;
+package Day1.Java;
 
-import java.sql.SQLOutput;
-
-public class Practice {
+public class EscapeCharacters {
     public static void main(String[] args) {
         System.out.println("\"Hello World\"");
         System.out.println("Anthony \nHermann");
