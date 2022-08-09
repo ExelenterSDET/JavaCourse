@@ -5,14 +5,13 @@ public class EscapeCharacters {
 
 
         System.out.println(" \" Hello \" ");
-        System.out.println("Furkat \nAli");
-        System.out.println("Furkat \t\tAli");
-        System.out.println(" \\ ");
+        System.out.println("Sebahattin \nBeycur");
+        System.out.println("Sebahattin \t\tBeycur");
+        System.out.println(" ----------------------------------- ");
 
-        // TASK solution
 
-        System.out.println("\"Hello World\"");
-        System.out.println("Furkat \nKhalilov");
+        System.out.println("\"Hello\"");
+        System.out.println("Sebahattin \nBeycur");
         System.out.println("\\Disney\\\t\\Land\\");
 
 
