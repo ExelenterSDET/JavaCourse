@@ -4,21 +4,18 @@ public class EscapeCharacters {
     public static void main(String[] args){
 
 
-        System.out.println(" \" Hello \" ");
+        System.out.println(" \" Hello Exelenter \" ");
+        System.out.println("Sebahattin\tBeycur");
         System.out.println("Sebahattin \nBeycur");
-        System.out.println("Sebahattin \t\tBeycur");
         System.out.println(" ----------------------------------- ");
+        System.out.println("\t------------------------------\t ");
 
-
-        System.out.println("\"Hello\"");
-        System.out.println("Sebahattin \nBeycur");
+        System.out.println("I am "+'4'+'2'+" years old.");
+        System.out.println("Sebahattin \n\t\t\tBeycur");
         System.out.println("\\Disney\\\t\\Land\\");
 
 
     }
 
-    // Tasks:
-    // 1. Type in your console : "Hello World"
-    // 2. Type your firstname on the first line and lastname on the second line
-    // 3. Type===>>> \Disney\   \Land\
+
 }
