@@ -14,5 +14,7 @@ public class JavaPracticeDilnozaHw {
         /*Multiline
         comment is here.
          */
-    }
+
+        System.out.println("Some testing");
+        System.out.println("Modification to push");    }
 }
