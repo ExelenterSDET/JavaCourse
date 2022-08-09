@@ -1,9 +1,8 @@
 package Day1.Practice;
 
-import java.sql.SQLOutput;
-
 public class Practice {
     public static void main(String[] args) {
+
         System.out.println("Andrea is struggling");
         System.out.println("Connect to remote Repo");
 
@@ -37,6 +36,8 @@ public class Practice {
         System.out.print("new changes");
         System.out.println(Malika2);
         
+
+
 
 
     }
