@@ -4,9 +4,9 @@ public class EscapeCharacters {
     public static void main(String[] args){
 
 
-        System.out.println(" \" Hello Exelenter \" ");
+        System.out.println(" \" Hello  Exelenter \" ");
         System.out.println("Sebahattin\tBeycur");
-        System.out.println("Sebahattin \nBeycur");
+        System.out.println("Sebahattin  \nBeycur");
         System.out.println(" ----------------------------------- ");
         System.out.println("\t------------------------------\t ");
 
