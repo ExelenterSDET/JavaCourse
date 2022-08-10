@@ -20,6 +20,11 @@ public class Hamid {
         System.out.println(total);
 
 
+        byte min = Byte.MIN_VALUE;
+
+        byte max = Byte.MAX_VALUE;
+        System.out.println("min = " + min);
+        System.out.println("max = " + max);
 
     }
 
