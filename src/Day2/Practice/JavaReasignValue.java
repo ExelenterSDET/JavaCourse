@@ -15,25 +15,25 @@ public class JavaReasignValue {
         System.out.println("num1 = "+num1);
 
         char ch = 'S';
-        System.out.println(ch);
+        System.out.print(ch);
         ch = 'E';
-        System.out.println(ch);
+        System.out.print(ch);
         ch = 'B';
-        System.out.println(ch);
+        System.out.print(ch);
         ch = 'A';
-        System.out.println(ch);
+        System.out.print(ch);
         ch = 'H';
-        System.out.println(ch);
+        System.out.print(ch);
         ch = 'A';
-        System.out.println(ch);
+        System.out.print(ch);
         ch = 'T';
-        System.out.println(ch);
+        System.out.print(ch);
         ch = 'T';
-        System.out.println(ch);
+        System.out.print(ch);
         ch = 'I';
-        System.out.println(ch);
+        System.out.print(ch);
         ch = 'N';
-        System.out.println(ch);
+        System.out.print(ch);
 
     }
 }
