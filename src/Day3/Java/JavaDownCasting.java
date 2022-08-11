@@ -1,7 +1,6 @@
 package Day3.Java;
 
 public class JavaDownCasting {
-
     //NarrowCasting
 
     /*
@@ -28,7 +27,7 @@ public class JavaDownCasting {
 
         byte bt1 = 5;
         byte bt2 = bt1;
-        byte bt3 =  (byte) iNum;
+        byte bt3 = (byte) iNum;
 
         System.out.println("bt1 = " + bt1);
         System.out.println("bt2 = " + bt2);
@@ -78,10 +77,9 @@ public class JavaDownCasting {
         float f11 = (float) db11;
 
         long fl12 = 500;
-        byte bt12 = (byte)fl12;
-        short sh12 = (short)fl12;
-        int iNum12= (int)fl12;
-
+        byte bt12 = (byte) fl12;
+        short sh12 = (short) fl12;
+        int iNum12 = (int) fl12;
 
     }
 }
