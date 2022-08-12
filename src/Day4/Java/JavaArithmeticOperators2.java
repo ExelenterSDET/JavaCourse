@@ -35,7 +35,5 @@ public class JavaArithmeticOperators2 {
 
         double db2 = 51 % 12.45;
         System.out.println("db2 = " + db2);
-
-
     }
 }
