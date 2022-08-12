@@ -3,7 +3,7 @@ package Day4.Practice;
 public class Dilnoza {
 
     public static void main(String[] args) {
-
+        System.out.println(1);
         int  number = 50;
         number+=70;
         System.out.println("number = " + number);
