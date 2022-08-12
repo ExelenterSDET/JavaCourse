@@ -11,5 +11,27 @@ public class Sebahattin {
         System.out.println("my wife = " + wf );
         System.out.println("myself= " + ms );
 
+        System.out.println("--------------------------");
+
+        int num = 50;
+        System.out.println("num = " + num);
+
+        num += 70;
+        System.out.println("num = " + num);
+
+        num /= 4;
+        System.out.println("num = " + num);
+
+        num %= 7;
+        System.out.println("num = " + num);
+
+        num *= 10;
+        System.out.println("num = " + num);
+
+        num -= 49;
+        System.out.println("num = " + num);
+
+
     }
 }
+
