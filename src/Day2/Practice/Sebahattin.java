@@ -1,6 +1,8 @@
 package Day2.Practice;
 
-public class JavaReasignValue {
+public class Sebahattin {
+
+
     public static void main(String[] args) {
 
         int num1 = 100;
