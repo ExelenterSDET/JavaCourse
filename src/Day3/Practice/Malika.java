@@ -18,5 +18,6 @@ public class Malika {
         System.out.println();
         System.out.println(""+(char)bt + (char)sh + (char)num + (char)l + (char)f + (char)d);
         System.out.println("Malika");
+        
     }
 }
