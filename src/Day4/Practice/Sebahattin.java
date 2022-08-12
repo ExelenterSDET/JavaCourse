@@ -1,4 +1,4 @@
-package Day3.Practice;
+package Day4.Practice;
 
 public class Sebahattin {
     public static void main(String[] args) {
