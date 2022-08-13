@@ -60,7 +60,7 @@ public class PreIncrementPreDecrement {
         System.out.println("total = " + total);
 
         // Task for homework.
-        // calculate total of number 563. (dont use hardcoding) answer should be 14; 
+        // calculate total of number 563. (dont use hardcoding) answer should be 14;
 
     }
 }
