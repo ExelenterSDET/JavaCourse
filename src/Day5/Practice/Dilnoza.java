@@ -27,8 +27,11 @@ public class Dilnoza {
         total1 += remainder1;
         System.out.println("total3 = " + total1);
 
-        System.out.println("test practice");
-        System.out.println("Practicing push");
+       
+
+
+
+
     }
 
 
