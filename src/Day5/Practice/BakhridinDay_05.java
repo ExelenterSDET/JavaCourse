@@ -31,5 +31,23 @@ public class BakhridinDay_05 {
         System.out.println("reminder1 = " + reminder1);
         totalOfReminders+=reminder1;
         System.out.println("totalOfReminders = " + totalOfReminders);
+
+        System.out.println("======2-nd way======");
+        int numb=563, diVider=10, remind=0;
+        //Step1
+        System.out.println("numb = " + numb);
+        remind+=numb%diVider;
+        System.out.println("remind = " + remind);
+        //Step2
+        numb/=diVider;
+        System.out.println("numb = " + numb);
+        remind+=numb%diVider;
+        System.out.println("remind = " + remind);
+        //Step3
+        numb/=diVider;
+        System.out.println("numb = " + numb);
+        remind+=numb%diVider;
+        System.out.println("remind = " + remind);
+
     }
 }
