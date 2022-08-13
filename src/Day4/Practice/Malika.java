@@ -1,3 +1,6 @@
+
+package Day4.Practice;public class Malika {
+
 package Day4.Practice;
 
 public class Malika {
@@ -24,4 +27,5 @@ public class Malika {
         num -= 49;
         System.out.println("num = " + num);
     }
+
 }
