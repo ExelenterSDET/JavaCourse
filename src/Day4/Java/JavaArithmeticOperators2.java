@@ -35,5 +35,9 @@ public class JavaArithmeticOperators2 {
 
         double db2 = 51 % 12.45;
         System.out.println("db2 = " + db2);
+
+        int number = 10;
+        number = number % 4; // 4*2=8 ==> remainder will be 10 - 8 = 2
+        System.out.println("number = " + number);
     }
 }
