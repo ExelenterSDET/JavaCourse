@@ -1,0 +1,60 @@
+
+//      TASK1: Write a program, which prints out the text, its length and char representation of the length
+//      TEXT:  ASCII stands for American Standard Code for Information Interchange.
+//      NOTE: Text should be in double quotes. Character should be in single quotes.
+
+//      TASK2: Write a program, which adds to the text, its length and char representation of the length
+//      TEXT:  Computers can only understand numbers, so an ASCII code is the numerical representation of a characters.
+//      NOTE: Print out each value in separate line. Character should be in single quotes.
+
+
+
+//      TASK3: Write a program, which prints out following texts in one line by using a String method
+//      Text1: Java
+//      Text2: programming
+//      Text3: language
+//      Text4: is fun
+//      NOTE: Do not use any variables. Code should be in a single line.
+
+// TASK4: Create following variables:
+//        byte b = 5;
+//        short s = 8;
+//        int i = 10;
+//        long l = 11;
+//        float f = 12.13f;
+//        double d = 15.0;
+
+//   create new variable as follows:
+//   int i1 = 0;
+//   reassign all variables to it.
+//   identify type of casting for each variable reassignment
+//   Sample output: upcasting ===> 8
+
+
+// Increment and Decrement Tasks
+
+// 1) What will be the output of the following program?
+        int i = 11;
+        i = i++ + ++i;
+
+// 2) Guess the output of the following program?
+        int a=11, b=22, c;
+        c = a + b + a++ + b++ + ++a + ++b;
+
+// 3) What will be the output of the below program?
+        int i1=0;
+        i1 = i1++ - --i1 + ++i1 - i1--;
+
+// 4) What will be the output of the following program?
+        int a1=1, b1=2;
+        int c1 = --b1 - ++a1 + ++b1 - --a1;
+
+// 5) What will be the output of the following program?
+        int m=20, n=10;
+        int o = m++ / ++n * m-- / --n;
+
+// 6) What will be the output of the following program?
+        int ch = 'a';
+        System.out.println(ch++);
+        System.out.println(++ch);
+        System.out.println((char) ++ch);
