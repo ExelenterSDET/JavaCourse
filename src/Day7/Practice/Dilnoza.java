@@ -2,9 +2,6 @@ package Day7.Practice;
 
 public class Dilnoza {
     public static void main(String[] args) {
-
-
-
 //        Create 3 strings as "JAVA ", " IS ", "FUN".Using concat method assign to the new string all of them.Last string should be "JAVA IS FUN"
         String str1 = "JAVA";
         String str2 =" IS ";
@@ -30,19 +27,5 @@ public class Dilnoza {
 
         System.out.println("Task8: "+ "isEqual: "+str1.equals(str5));
         System.out.println("Task8: "+ "isEqualIgnoreCase: "+str1.equalsIgnoreCase(str5));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
