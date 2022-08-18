@@ -1,0 +1,9 @@
+Text: "Java Exercises for Mentoring Session"
+Task1: Write a Java program to get the character at the index 5 and last index within the String.
+Task2: Write a Java program to check if String contains "mentor" regardless of Case Sensitivity.
+Task3: Write a Java program to get the index of third character 'e' within the String.
+Task4: Write a Java program to get the index of third last character 'i' within the String.
+Task5: Write a Java program to get each word separately from the String in separate lines.
+Task6: Write a Java program which replaces all Capital characters with '$' sign.
+
+
