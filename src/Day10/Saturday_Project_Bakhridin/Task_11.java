@@ -1,4 +1,4 @@
-package Saturday_Project_Bakhridin;
+package Day10.Saturday_Project_Bakhridin;
 
 import java.util.Scanner;
 

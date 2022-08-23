@@ -1,4 +1,4 @@
-package Saturday_Project_Bakhridin;
+package Day10.Saturday_Project_Bakhridin;
 
 public class Task_14 {
     public static void main(String[] args) {
