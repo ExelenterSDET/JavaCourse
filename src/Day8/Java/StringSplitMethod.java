@@ -14,6 +14,5 @@ public class StringSplitMethod {
         String str2 = "I love java. Java is Fun. I will be a good software engineer";
         String[] s = str2.split(" ");
         System.out.println(Arrays.toString(s));
-
     }
 }
