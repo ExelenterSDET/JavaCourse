@@ -41,7 +41,7 @@ public class Dilnoza {
                     input="wrong input";
             }
             System.out.println(input);
-
+            System.out.println("Test");
         }
     }
 
