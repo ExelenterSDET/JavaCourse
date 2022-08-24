@@ -40,6 +40,8 @@ public class Bakhridin_Switch_Class {
         }
         System.out.println(result);
 
+        System.out.println("Test");
+
 
     }
 }
