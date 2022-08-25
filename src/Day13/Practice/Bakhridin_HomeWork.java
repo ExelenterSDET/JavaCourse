@@ -1,5 +1,7 @@
 package Day13.Practice;
 
+import java.util.Scanner;
+
 public class Bakhridin_HomeWork {
     public static void main(String[] args) {
 
@@ -18,8 +20,8 @@ public class Bakhridin_HomeWork {
         else return "Invalid password"
          */
 
-        String passWord= "AuroraCity$";
-        String result = null;
+//        String passWord= "AuroraCity$";
+//        String result = null;
 //
 //        if (passWord.length()>8 && passWord.contains("A")&&passWord.contains("o")&&passWord.contains("$")) {
 //            result="Strong password";
@@ -28,12 +30,26 @@ public class Bakhridin_HomeWork {
 //        }
 //        System.out.println("result = " + result);
 
-        result=(passWord.length()>8 && passWord.contains("A")&&passWord.contains("o")&&passWord.contains("$"))
-                ? "Strong password":"Invalid password";
+//        result=(passWord.length()>8 && passWord.contains("A")&&passWord.contains("o")&&passWord.contains("$"))
+//                ? "Strong password":"Invalid password";
+//
+//        System.out.println("result = " + result);
 
-        System.out.println("result = " + result);
+        Scanner scan = new Scanner(System.in);
 
+        System.out.println("Create a password => ");
+        String input = scan.nextLine();
 
+        int capitalLetters=input.replaceAll("[^A-Z]","").length();
+        int lowerLetters=input.replaceAll("[^a-z]","").length();
+        int symbolCount=input.replaceAll("[A-z0-9]","").length();
+
+        String message= input.length()>=8
+                && capitalLetters>=1
+                && lowerLetters>=1
+                && symbolCount>=1 ? "Strong password" : "Invalid password";
+        System.out.println("message = " + message);
     }
+
 
 }
