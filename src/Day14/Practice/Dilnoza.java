@@ -40,6 +40,10 @@ public class Dilnoza {
             }
             System.out.println(output);
 
+        System.out.println("*****USING TERNARY OPERATOR*****");
+
+        output = userNum1 >= 3?"Invalid entry": userNum1 == randomNum?" You Won the Game!!!":"Game Over!!!";
+        System.out.println("output = " + output);
         }
 
     }
