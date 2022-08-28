@@ -16,14 +16,14 @@ public class Said {
             i++;
         }
 
-        // Note: both codes return same result, which bears the question when to use which?
+        //Todo: both codes return same result, which bears the question when to use which?
         /**
          * FOR LOOP is better when we know exactly how many times we want to iterate/loop.
          * WHILE LOOP is good when we don't know exact number of iteration, but rather depend on the given condition.
          * For example, keep looping until you find an employee with the name "Mike" from the list in Database.
          */
 
-        // GOOD EXAMPLE OF WHILE. Note: Remove ! mark to see real difference between while and do while.
+        //Todo: First run as-is, then remove ! mark to see real difference between while and do while.
         String input = "";
         Scanner scanner = new Scanner(System.in);
         while (!input.equals("quit")) { // remove ! mark in front of input to see real difference ==> while (input.equals("quit"))
@@ -32,7 +32,8 @@ public class Said {
         }
 
         /**
-         * In contrast to WHILE, with DO WHILE we check condition at the end. Always gets executed at least once.
+         * In contrast to WHILE, with DO WHILE we check condition at the end.
+         * Do While always gets executed at least once.
          * It is best used when at least one iteration is required. RARELY USED.
           */
         do {
