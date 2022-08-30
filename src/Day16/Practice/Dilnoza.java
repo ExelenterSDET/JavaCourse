@@ -20,14 +20,22 @@ public class Dilnoza {
 
         System.out.println("===============TASK2================");
 
+        int number = 12365821;
+        String num = String.valueOf(number);
+        String numReverse = "";
+
+        for (int i = num.length() - 1; i >= 0; i--) {
+            numReverse += num.charAt(i);
+        }
+        System.out.println("Is Polendrome => " + num.equals( numReverse));
 
 
         System.out.println("===============TASK3================");
-        int number=2;
+        int number11=2;
 
         for (int i = 1; i < 10; i++){
-            int number2 = number*i;
-            System.out.println(number+"*" +i +"=" + number2);
+            int number2 = number11*i;
+            System.out.println(number11+"*" +i +"=" + number2);
         }
         System.out.println("===============TASK4================");
 
