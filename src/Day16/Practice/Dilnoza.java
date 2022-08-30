@@ -7,7 +7,7 @@ public class Dilnoza {
        /* Task6.
                 Using scanner create a string.
                 Return reverse of a string.
-                Example: str = Java, result should be = avaJ
+                Example: str1 = Java, result should be = avaJ
                 */
         System.out.println("===============TASK1================");
         String str = "Java";
@@ -22,13 +22,16 @@ public class Dilnoza {
 
 
 
-        System.out.println("===============TASK2================");
+        System.out.println("===============TASK3================");
         int number=2;
 
         for (int i = 1; i < 10; i++){
             int number2 = number*i;
             System.out.println(number+"*" +i +"=" + number2);
         }
+        System.out.println("===============TASK4================");
+
+
 
         System.out.println("===============TASK5================");
         int count = 0;
@@ -37,11 +40,37 @@ public class Dilnoza {
             count ++;
             System.out.println("count = " + count);
         }
+        System.out.println("===============TASK6================");
+        String str1 = "Java is fun";
+        char ch = 'f';
+        for (int i = 0; i <str1.length() ; i++) {
+
+            if (str1.charAt(i)=='f'){
+
+                break;
+            }  System.out.print(str1.charAt(i));
+        }
+        System.out.println("===============TASK7================");
+
+        String str2 = "Hello World";
+        for (int i = 0; i <str2.length() ; i++) {
+            if(str2.charAt(i)=='l'){
+                continue;
+            }
+            System.out.print(str2.charAt(i));
+        }
+        System.out.println("===============TASK8================");
 
 
+        for (int i = 0; i < 50; i++) {
+            if(i%6==0){
+                continue;
+            }
+            System.out.println(i);
+
+        }
 
 
-        
     }
 
 }
