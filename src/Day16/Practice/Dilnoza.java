@@ -9,6 +9,7 @@ public class Dilnoza {
                 Return reverse of a string.
                 Example: str1 = Java, result should be = avaJ
                 */
+        System.out.println("                         ");
         System.out.println("===============TASK1================");
         String str = "Java";
         String newStr ="";
@@ -18,6 +19,7 @@ public class Dilnoza {
         }
         System.out.println(newStr);
 
+        System.out.println("                         ");
         System.out.println("===============TASK2================");
 
         int number = 12365821;
@@ -29,7 +31,7 @@ public class Dilnoza {
         }
         System.out.println("Is Polendrome => " + num.equals( numReverse));
 
-
+        System.out.println("                         ");
         System.out.println("===============TASK3================");
         int number11=2;
 
@@ -37,10 +39,15 @@ public class Dilnoza {
             int number2 = number11*i;
             System.out.println(number11+"*" +i +"=" + number2);
         }
+        System.out.println("                         ");
         System.out.println("===============TASK4================");
 
+        for (int i = 1;i <=10 ; i+=2) {
+            int j = i+1;
+            System.out.println(i + " "+ j );
 
-
+        }
+        System.out.println("                         ");
         System.out.println("===============TASK5================");
         int count = 0;
 
@@ -48,6 +55,7 @@ public class Dilnoza {
             count ++;
             System.out.println("count = " + count);
         }
+        System.out.println("                         ");
         System.out.println("===============TASK6================");
         String str1 = "Java is fun";
         char ch = 'f';
@@ -58,6 +66,7 @@ public class Dilnoza {
                 break;
             }  System.out.print(str1.charAt(i));
         }
+        System.out.println("                         ");
         System.out.println("===============TASK7================");
 
         String str2 = "Hello World";
@@ -67,6 +76,7 @@ public class Dilnoza {
             }
             System.out.print(str2.charAt(i));
         }
+        System.out.println("                         ");
         System.out.println("===============TASK8================");
 
 
