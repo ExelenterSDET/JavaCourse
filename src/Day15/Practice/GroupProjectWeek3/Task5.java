@@ -1,4 +1,4 @@
-package GroupProjectWeek3;
+package Day15.Practice.GroupProjectWeek3;
 
 public class Task5 {
     /*
