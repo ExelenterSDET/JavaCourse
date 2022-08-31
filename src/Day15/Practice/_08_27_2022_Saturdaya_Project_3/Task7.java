@@ -18,22 +18,34 @@ Example: flapoeplksldfalafaaafoiwefafsa === output should be 8, since a is the m
 
         while (index < 30) {
 
-            char randomLowerCase = (char) rnd.nextInt(97, 123);
+            char randomLowerCase = (char) rnd.nextInt(97, 123);  // 97 = a
             randomText += randomLowerCase;
             index++;
         }
         System.out.println("randomText = " + randomText);
+        System.out.println("length: " + randomText.length());
 
         int maxCounter = 0;
+        String charToDisplay = "";
 
         while (randomText.length() > 0){
-            int randomTextLen = randomText.length();
-            String character = String.valueOf(randomText.charAt(0));
-            randomText = randomText.replace(character, "");
-            int charCounter = randomTextLen - randomText.length();
+            int randomTextLen = randomText.length();  // 30  25
+            char character = randomText.charAt(0); // f
+            String charSTR = String.valueOf(character);
+            randomText = randomText.replace(charSTR, ""); // was => flapoeplksldfalafaaafoiwefafsa | became=>lapoeplksld...
+            int charCounter = randomTextLen - randomText.length();  // 30 - 25 = 5  / 25 - 22 = 3
 
-            maxCounter = maxCounter > charCounter ? maxCounter : charCounter;
+//            maxCounter = maxCounter > charCounter ? maxCounter : charCounter;// 5
+
+            if (maxCounter < charCounter){
+                maxCounter = charCounter;
+                charToDisplay = charSTR;
+            }
         }
+
+
         System.out.println("maxCounter = " + maxCounter);
+        System.out.println("charToDisplay = " + charToDisplay);
+
     }
 }
