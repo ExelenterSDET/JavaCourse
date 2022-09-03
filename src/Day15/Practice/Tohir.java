@@ -1,10 +1,6 @@
-package Day15.Practice;
 
-import java.util.Random;
-import java.util.Scanner;
 
 public class Tohir {
-
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -65,6 +61,5 @@ public class Tohir {
             b--;
         }while (0<b);
         System.out.println(result);
-
     }
 }

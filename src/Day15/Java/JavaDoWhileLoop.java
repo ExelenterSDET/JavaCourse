@@ -17,7 +17,8 @@ public class JavaDoWhileLoop {
             System.out.print("!!!!!!! ");
             num ++;
             System.out.println("num = " + num);
-        }while(num < 10);
+        }
+       while(num < 10);
 
     }
 }
