@@ -75,5 +75,10 @@ public class Mustafa {
             pow++;
         }
         System.out.println(int6);
+
+
+
+
+
     }
 }

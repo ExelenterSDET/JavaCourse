@@ -16,6 +16,7 @@ public class JavaArrays {
 
         System.out.println("Arrays.toString(numberArr) = " + Arrays.toString(numberArr));
 
+
         String strArr[] = new String[3];
 
         System.out.println("Arrays.toString(strArr) = " + Arrays.toString(strArr));
