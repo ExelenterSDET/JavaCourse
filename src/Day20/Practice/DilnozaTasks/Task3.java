@@ -29,7 +29,7 @@ public class Task3 {
 
             for (int j = 0; j <arrInner.length ; j++) {
                 arrInner[j] =random.nextInt(0,10);
-                if(arrOuter[0]==arrInner[0]&& arrOuter[arrOuter.length-1]==arrInner[arrInner.length-1]){
+                if(arrOuter[0]==arrInner[0]|| arrOuter[arrOuter.length-1]==arrInner[arrInner.length-1]){
                     isTrue=true;
                 }else{
                     isTrue=false;
