@@ -85,5 +85,20 @@ public class Mustafa {
             arr1[i] = total;
         }
         System.out.println(Arrays.toString(arr1));
+        System.out.println("HOMEWORK-------------------------------------------------");
+        /*String[][] arr = {{"apple", "watermelon", "grapes"},
+                {"math", "geometry", "chemistry","science","algebra"},
+                {"london", "istanbul", "washington", "mexico"}};
+        Return all string in the camel case format.
+                example: apple => Apple, math => Math, london => London*/
+        String[][] arr3 = {{"apple", "watermelon", "grapes"},
+                {"math", "geometry", "chemistry","science","algebra"},
+                {"london", "istanbul", "washington", "mexico"}};
+
+        for (int i = 0; i < arr3.length; i++) {
+            for (int j = 0; j < arr3[i].length; j++) {
+                System.out.println(arr3[i][j].substring(0,1).toUpperCase() + arr3[i][j].substring(1));
+            }
+        }
     }
 }
