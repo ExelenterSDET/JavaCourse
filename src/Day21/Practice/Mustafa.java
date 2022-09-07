@@ -85,7 +85,7 @@ public class Mustafa {
             arr1[i] = total;
         }
         System.out.println(Arrays.toString(arr1));
-        System.out.println("HOMEWORK-------------------------------------------------");
+        System.out.println("HOMEWORK--------------------------------------------------");
         /*String[][] arr = {{"apple", "watermelon", "grapes"},
                 {"math", "geometry", "chemistry","science","algebra"},
                 {"london", "istanbul", "washington", "mexico"}};
