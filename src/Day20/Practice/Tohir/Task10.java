@@ -1,7 +1,7 @@
-package Tohir;
+package Day20.Practice.Tohir;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.Arrays;
+
 public class Task10 {
     public static void main(String[] args) {
         //Task10:
@@ -11,7 +11,7 @@ public class Task10 {
         //        Return the name of the student, whose name is stored under the generated index.
         //        Print: WINNER IS + <<Student Name>>!!! (All capital letters)
         //        Example:
-        //        [Anthony, Arthur, Andrea, Malika, Bahridin, Sebahattin, Dilnoza, Mehmet, Tohir, Mustafa]
+        //        [Anthony, Arthur, Andrea, Malika, Bahridin, Sebahattin, Dilnoza, Mehmet, Day20.Practice.Tohir, Mustafa]
         //
         //        if random number is 0, print WINNER IS ANTHONY!!!!
         Scanner scan = new Scanner(System.in);

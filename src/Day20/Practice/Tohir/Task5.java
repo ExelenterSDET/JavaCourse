@@ -1,4 +1,4 @@
-package Tohir;
+package Day20.Practice.Tohir;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.Arrays;

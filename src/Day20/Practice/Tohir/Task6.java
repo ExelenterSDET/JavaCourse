@@ -1,6 +1,4 @@
-package Tohir;
-import java.util.Random;
-import java.util.Scanner;
+package Day20.Practice.Tohir;
 import java.util.Arrays;
 public class Task6 {    public static void main(String[] args) {
     //Task6:

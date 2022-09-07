@@ -1,6 +1,4 @@
-package Tohir;
-import java.util.Random;
-import java.util.Scanner;
+package Day20.Practice.Tohir;
 import java.util.Arrays;
 public class Task9 { public static void main(String[] args) {
     // Given an array of [6,5,2,7,0,1,3,8,6,2,1,3,7,9,0]
