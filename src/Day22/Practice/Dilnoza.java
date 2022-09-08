@@ -80,7 +80,7 @@ public class Dilnoza {
         void reverse( int [] reverse){
 
             for (int i = reverse.length - 1; i >= 0; i--) {
-                System.out.print(reverse[i]);
+                System.out.print( reverse[i]+", ");
 
             }
         }
