@@ -1,4 +1,4 @@
-package Day21.Practice;
+package Day13.Day21.Practice;
 
 public class Bakhridin_HomeWork {
     public static void main(String[] args) {

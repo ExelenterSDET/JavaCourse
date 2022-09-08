@@ -1,4 +1,4 @@
-package Day21.Java;
+package Day13.Day21.Java;
 
 public class Task1 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Day21.Java;
+package Day13.Day21.Java;
 
 import java.util.Arrays;
 import java.util.Random;

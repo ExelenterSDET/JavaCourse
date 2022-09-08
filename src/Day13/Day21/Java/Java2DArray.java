@@ -1,6 +1,4 @@
-package Day21.Java;
-
-import java.util.Arrays;
+package Day13.Day21.Java;
 
 public class Java2DArray {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Day21.Practice.Tohir;
+package Day13.Day21.Practice.Tohir;
 
 public class Task_1 {
     public static void main(String[] args) {

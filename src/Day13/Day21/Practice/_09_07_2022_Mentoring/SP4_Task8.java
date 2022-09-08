@@ -1,4 +1,4 @@
-package Day21.Practice._09_07_2022_Mentoring;
+package Day13.Day21.Practice._09_07_2022_Mentoring;
 
 public class SP4_Task8 {
         /*    Task8:
