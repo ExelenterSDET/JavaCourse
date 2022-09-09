@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class JavaMethods {
     public static void main(String[] args) {
-//        print();
+        //print();
         JavaMethods jm = new JavaMethods();
         jm.print2();
     }
