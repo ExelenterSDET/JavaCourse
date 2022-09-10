@@ -1,6 +1,31 @@
 package Day24.Practice.Tohir_Week5;
 
 public class Assignment_6 {
+
+    public static void main(String[] args) {
+        Assignment_6 asg = new Assignment_6();
+     String[] countryNames = {"USA" ,"Mexico" ,"Canada"};
+     int[] countryPopulations = {100000 , 120000 , 130000};
+     String country = "Canada";
+        System.out.println(" = " + asg.populationOfCountry(countryNames,countryPopulations,country));
+    }
+    int populationOfCountry(String[] str, int [] num, String str1)
+    {
+        int index = -1;
+        for (int i = 0; i < str.length; i++) {
+
+            if (str[i].equals(str1))
+            {
+               index = num[i];
+               break;
+            }else
+            {
+                index = -1;
+            }
+
+        }
+        return index;
+    }
 }
 //Task 6
 //
