@@ -4,26 +4,29 @@ import java.util.Arrays;
 
 public class Assignment_4 {
     public static void main(String[] args) {
-/*        int num = 5;
-        int [][] a = new int[num][];
-        int a[0][0]=0;
-        for (int i = 1; i < a.length; i++) {
-            a.length = i;
-            for (int i1 = 0; i1 < a.length; i1++) {
-                a[i][i1] = i;
+
+        int[] dArr = new int[5];
+        int[] dArr1 = new int[5];
+
+        System.out.println(Arrays.toString(dArr));
+
+        for (int row = 0; row < dArr1.length; row++) {
+            dArr[row]= row;
             }
-        }*/
 
-        //System.out.println(Arrays.deepToString(a));
-       //System.out.println("Arrays.deepToString(a) = " + Arrays.deepToString(a)+" "+a.length);
-        //for (int i = 0; i < num; i++) {
-          //  a[i][0]=i;
-                    }
-       // System.out.println("a = " + Arrays.toString(a));
-     //   System.out.println("Arrays.deepToString(a) = " + Arrays.deepToString(a)+" "+a.length);
 
+            //           for (int col = 0; col < dArr[row].length; col++) {
+            //               dArr[row][col] = row;
+
+
+
+        System.out.println(Arrays.toString(dArr));
+
+    }
 }
-//Task4
+
+
+        //Task4
 //
 //Create a 2D int array
 //The 2D array has 5 element arrays

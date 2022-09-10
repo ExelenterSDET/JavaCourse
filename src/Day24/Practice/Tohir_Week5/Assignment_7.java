@@ -1,7 +1,50 @@
 package Day24.Practice.Tohir_Week5;
 
 public class Assignment_7 {
-}
+    public static void main(String[] args) {
+        Assignment_7 asg = new Assignment_7();
+        int nu [] = {2,3,4,5,6,7,55};
+        System.out.println("asg.threeEvenOrOdd(nu) = " + asg.threeEvenOrOdd(nu));
+        int[][] n1 = {{2, 3, 10, 8}, {1, 3, 5, 8},{2, 2, 5, 1},{4, 12, 9, 8}};
+        System.out.println("asg.qtyOfThreeEvenOrOdd(n1) = " + asg.qtyOfThreeEvenOrOdd(n1));
+    }
+    boolean threeEvenOrOdd(int... a)//part1
+    {
+        int odd = 0;
+        int even = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i]%2==0){
+                even++;
+            }
+            else {
+                odd++;
+            }
+        }
+        return even==3||odd==3;
+    }
+    int qtyOfThreeEvenOrOdd(int[][]... a)
+    {
+        String syt = "";
+
+        int sum = 0;
+        for (int i = 0; i < a.length; i++) {
+            for (int i1 = 0; i1 < a[i].length; i1++) {
+                syt.concat(a[i][i1]+" ");
+                }
+            String str [] = syt.split(" ");
+            int [] nm= new int[str.length];
+            for (int i1 = 0; i1 < str.length; i1++) {
+                nm[i1] = Integer.valueOf(str[i1]);
+            }
+
+            if (threeEvenOrOdd(nm)){
+                sum++;
+                }
+            }
+        return sum;
+        }
+    }
+
 //Task 7
 //
 //Part 1.

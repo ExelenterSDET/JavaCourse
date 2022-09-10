@@ -1,6 +1,23 @@
 package Day24.Practice.Tohir_Week5;
 
+import java.util.Arrays;
+
 public class Assignment_8 {
+    public static void main(String[] args) {
+        Assignment_8 as = new Assignment_8();
+        int[] num = {1, 33, 5, 6, 3, 8, 9};
+        System.out.println("as.updateRange({1,33,5,6,3,8,9},3,7) = " +Arrays.toString(as.updateRange(num, 3, 7)));
+    }
+
+    int[] updateRange(int[] a, int b, int c) {
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] > b && a[i] < c) {
+                a[i] = -1;
+            }
+        }
+        return a;
+
+    }
 }
 //Task 8
 //
