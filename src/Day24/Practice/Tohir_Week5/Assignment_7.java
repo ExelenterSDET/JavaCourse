@@ -1,5 +1,7 @@
 package Day24.Practice.Tohir_Week5;
 
+import java.util.Arrays;
+
 public class Assignment_7 {
     public static void main(String[] args) {
         Assignment_7 asg = new Assignment_7();
@@ -29,15 +31,14 @@ public class Assignment_7 {
         int sum = 0;
         for (int i = 0; i < a.length; i++) {
             for (int i1 = 0; i1 < a[i].length; i1++) {
-                syt.concat(a[i][i1]+" ");
+                syt = syt.concat(a[i][i1]+" ");
                 }
-            String str [] = syt.split(" ");
-            int [] nm= new int[str.length];
-            for (int i1 = 0; i1 < str.length; i1++) {
-                nm[i1] = Integer.valueOf(str[i1]);
+            String spl[] = syt.split(" ");
+            int [] ni = new int[spl.length];
+            for (int i1 = 0; i1 < spl.length; i1++) {
+                ni[i1] = Integer.parseInt(spl[i1]);
             }
-
-            if (threeEvenOrOdd(nm)){
+           if (threeEvenOrOdd(ni)){
                 sum++;
                 }
             }
