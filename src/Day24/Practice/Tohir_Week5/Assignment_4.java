@@ -5,22 +5,15 @@ import java.util.Arrays;
 public class Assignment_4 {
     public static void main(String[] args) {
 
-        int[] dArr = new int[5];
-        int[] dArr1 = new int[5];
+        int[][] dArr = new int[5][];
 
-        System.out.println(Arrays.toString(dArr));
-
-        for (int row = 0; row < dArr1.length; row++) {
-            dArr[row]= row;
+        for (int i = 0; i < 5; i++) {
+            dArr[i]= new int[i];
+            for (int j=0; j<i; j++){
+                dArr[i][j] = i;
             }
-
-
-            //           for (int col = 0; col < dArr[row].length; col++) {
-            //               dArr[row][col] = row;
-
-
-
-        System.out.println(Arrays.toString(dArr));
+            }
+        System.out.println("Arrays.deepToString(dArr) = " + Arrays.deepToString(dArr));
 
     }
 }

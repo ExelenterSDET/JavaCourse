@@ -1,6 +1,43 @@
 package Day24.Practice.Tohir_Week5;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Assignment_9 {
+    public static void main(String[] args) {
+        Assignment_9 as = new Assignment_9();
+        as.letsGuess();
+    }
+    void letsGuess()
+    {
+        Random ram = new Random();
+        Scanner sc = new Scanner(System.in);
+        int secretNumber = ram.nextInt(1,101);
+        System.out.println("secretNumber = " + secretNumber);
+        int i = 0;
+        int guess = 0;
+        while (i<5){
+            System.out.println("Guess a number between 0 and 100 (inclusive): ");
+            guess = sc.nextInt();
+            if(guess==secretNumber){
+                System.out.println("You won. Congrats!");
+                break;
+            }
+
+            else if (guess < secretNumber){
+                System.out.println("Your number is small. Try a bigger number: ");
+            }
+            else if (guess > secretNumber){
+                System.out.println("Your number is big. Try a smaller number: ");
+            }
+            i++;
+            if (i == 5)
+            {
+                System.out.println("You lost! Better chance next time.");
+            }
+        }
+
+    }
 }
 //Task 9
 //        Create a non-static method whose name is letsGuess().
