@@ -8,10 +8,10 @@ public class Assignment_3 {
       String str1 = "a";
       String str2 = "a";
       String str3[] = {"JaVa", "iS", "FUN","MadamM"};
-      int [] num = {1,2,3,4,5};
+      int [] num = {1,2,3,4,5,2,2,2,3};
         System.out.println(" = " + asg.isEqual(num1,num2)+" "+asg.isEqual(str1,str2));
         System.out.println("" + asg.numberOfElementsInVarArg(2,num));
-        System.out.println("asg = " + asg.numberOfElementsInVarArg("a", str3));
+        System.out.println("asg = " + asg.numberOfElementsInVarArg( "FUN", str3));
     }
     Boolean isEqual(int a, int b) //1
     {
@@ -21,21 +21,26 @@ public class Assignment_3 {
     {
         return a.equals(b);
     }
-    String numberOfElementsInVarArg(int b, int... a)//3
+    int numberOfElementsInVarArg(int b, int... a)//3
     {
         int sum = 0;
         for (int i = 0; i < a.length; i++) {
-           sum+=a[i];
+            if (isEqual(b,a[i])) {
+                sum++;
+            }
         }
-        String s = "";
-        s = s.concat("sum of parameters "+String.valueOf(sum)).concat(String.valueOf(", length of param "+a.length));
-       // s = s.concat(", ");
-        //s = s.concat(String.valueOf("length of param "+a.length));
-        return s;
+
+        return sum;
     }
     int numberOfElementsInVarArg(String b, String... a)//4
     {
-    return a.length;
+        int sum = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (isEqual(b,a[i])){
+                sum++;
+            }
+        }
+    return sum;
     }
 }
 //Task3
