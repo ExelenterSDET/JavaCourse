@@ -19,9 +19,10 @@ public class Assignment_2 {
         System.out.println("str = " +asg.longestStringLength(str));
         String str1 = "ManAS";
         System.out.println("asg.formatString(str1) = " + asg.formatString(str1));
-        String str2[] = {"JaVa", "iS", "FUN"};
+        String str2[] = {"JaVa", "iS", "FUN","MadamM"};
         String s [] = asg.formatStringArray(str2);
         System.out.println("str2 = " + Arrays.toString(s));
+        System.out.println("asg.longestStringLength(str2) = " + asg.longestStrings(str2));
 
     }
     int getStringLength(String str){
@@ -43,7 +44,6 @@ public class Assignment_2 {
         }
     String[] formatStringArray(String str[])//4
     {
-
        for (int i = 0; i < str.length; i++) {
            str[i] = formatString(str[i]);
         }
@@ -51,6 +51,14 @@ public class Assignment_2 {
     }
     String longestStrings(String str[])//5
     {
-        
+     str = formatStringArray(str);
+     String ss = "";
+     int a = longestStringLength(str);
+        for (int i = 0; i < str.length; i++) {
+            if (str[i].length() == a){
+                ss = ss.concat(" " +str[i]);
+            }                
+        }
+        return ss;
     }
 }
