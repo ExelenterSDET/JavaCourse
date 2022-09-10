@@ -4,17 +4,17 @@ import java.util.Arrays;
 
 public class Assignment_4 {
     public static void main(String[] args) {
-        int num = 5;
+/*        int num = 5;
         int [][] a = new int[num][];
-        int[][] dArr = new int[num][num-1];
-
-        for (int row = 0; row < dArr.length; row++) {
-            for (int col = 0; col < row+1; col++) {
-                dArr[row][col] = col;
+        int a[0][0]=0;
+        for (int i = 1; i < a.length; i++) {
+            a.length = i;
+            for (int i1 = 0; i1 < a.length; i1++) {
+                a[i][i1] = i;
             }
-        }
+        }*/
 
-        System.out.println(Arrays.deepToString(dArr));
+        //System.out.println(Arrays.deepToString(a));
        //System.out.println("Arrays.deepToString(a) = " + Arrays.deepToString(a)+" "+a.length);
         //for (int i = 0; i < num; i++) {
           //  a[i][0]=i;
