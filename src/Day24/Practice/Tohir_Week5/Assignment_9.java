@@ -15,19 +15,23 @@ public class Assignment_9 {
         int secretNumber = ram.nextInt(1,101);
         System.out.println("secretNumber = " + secretNumber);
         int i = 0;
+        String str = "";
         int guess = 0;
         while (i<5){
             System.out.println("Guess a number between 0 and 100 (inclusive): ");
-            guess = sc.nextInt();
-            if(guess==secretNumber){
+            str = sc.next();
+            if (str.matches("[A-Za-z!@#&()–[{}]:;'`,?/*~$^+=<>]+$")){
+                System.out.println("Please enter a valid number: ");
+            }
+            else if(Integer.parseInt(str)==secretNumber){
                 System.out.println("You won. Congrats!");
                 break;
             }
 
-            else if (guess < secretNumber){
+            else if (Integer.parseInt(str) < secretNumber){
                 System.out.println("Your number is small. Try a bigger number: ");
             }
-            else if (guess > secretNumber){
+            else if (Integer.parseInt(str) > secretNumber){
                 System.out.println("Your number is big. Try a smaller number: ");
             }
             i++;
