@@ -8,7 +8,7 @@ public class Assignment_7 {
         int nu [] = {2,3,4,5,6,7,55};
         System.out.println("asg.threeEvenOrOdd(nu) = " + asg.threeEvenOrOdd(nu));
         int[][] n1 = {{2, 3, 10, 8}, {1, 3, 5, 8},{2, 2, 5, 1},{4, 12, 9, 8}};
-        System.out.println("asg.qtyOfThreeEvenOrOdd(n1) = " + asg.qtyOfThreeEvenOrOdd(n1));
+       // System.out.println("asg.qtyOfThreeEvenOrOdd(n1) = " + asg.qtyOfThreeEvenOrOdd(n1));
     }
     boolean threeEvenOrOdd(int... a)//part1
     {
@@ -24,7 +24,7 @@ public class Assignment_7 {
         }
         return even==3||odd==3;
     }
-    int qtyOfThreeEvenOrOdd(int[][]... a)
+/*    int qtyOfThreeEvenOrOdd(int[][]... a)
     {
         String syt = "";
 
@@ -43,7 +43,7 @@ public class Assignment_7 {
                 }
             }
         return sum;
-        }
+        }*/
     }
 
 //Task 7
