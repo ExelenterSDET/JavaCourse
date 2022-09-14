@@ -14,7 +14,7 @@ public class TaskN1 {
         return total;
     }
 
-    static int Length(int... num){return num.length;}
+    static int Length(int... num){ return num.length;}
     static int average(int...num){return Total(num)/Length(num);}
 
     public static void main(String[] args) {
