@@ -18,3 +18,4 @@ public class HomeworkTask1 {
         System.out.println("maxNum = " + maxNum);
     }
 }
+
