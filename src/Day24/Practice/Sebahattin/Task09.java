@@ -23,9 +23,9 @@ public class Task09 {
 */
     public static void main(String[] args) {
         Task09 ts = new Task09();
-        ts.adıletsGuess();
+        ts.letsGuess();
     }
-    void adıletsGuess() {
+    void letsGuess() {
         Random random = new Random();
         Scanner scan = new Scanner(System.in);
         int secretNumber = random.nextInt(101);
@@ -53,8 +53,5 @@ public class Task09 {
         if (guessCount == 5) {
             System.out.println("You lost! Better chance next time.");
         }
-    }
-
-    public void letsGuess() {
     }
 }

@@ -34,9 +34,9 @@ public class OptionalChallengesToTask09 {
 */
     public static void main(String[] args) {
         OptionalChallengesToTask09 ts = new OptionalChallengesToTask09();
-        ts.adıletsGuess();
+        ts.letsGuess();
     }
-    void adıletsGuess() {
+    void letsGuess() {
         Random random = new Random();
         Scanner scan = new Scanner(System.in);
         int secretNumber = random.nextInt(101);
@@ -73,7 +73,7 @@ public class OptionalChallengesToTask09 {
         int guessNew = scan.nextInt();
         if (guessNew == 1){
             OptionalChallengesToTask09 ts = new OptionalChallengesToTask09();
-            ts.adıletsGuess();
+            ts.letsGuess();
         }else if (guessNew != 1 && guessNew != 0) {
             OptionalChallengesToTask09 ts = new OptionalChallengesToTask09();
             ts.falseNewGuess();
