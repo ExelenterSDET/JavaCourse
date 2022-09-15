@@ -23,37 +23,37 @@ public class Task09 {
 */
     public static void main(String[] args) {
         Task09 ts = new Task09();
-//        ts.adıletsGuess();
+        ts.adıletsGuess();
     }
-//    void adıletsGuess() {
-//        Random random = new Random();
-//        Scanner scan = new Scanner(System.in);
-//        int secretNumber = random.nextInt(101);
-//        int guessCount = 0;
-//        System.out.print("Guess a random number between 0 and 100 (inclusive) ==> ");
-//
-//        for (int i = 0; i <5; i++) {
-//
-//            int guess = scan.nextInt();
-//
-//            if (guess == secretNumber) {
-//                System.out.println("You won!!");
-//                break;
-//            } else if (guess > secretNumber && guess <= 100) {
-//                System.out.println("Your number is big. Try a smaller number ==> ");
-//                guessCount++;
-//            } else if (guess < secretNumber && guess >= 0) {
-//                System.out.println("Your number is too small. Try a bigger number ==> ");
-//                guessCount++;
-//            } else {
-//                System.out.println("Please enter a valid number ==> ");
-//                guessCount++;
-//            }
-//        }
-//        if (guessCount == 5) {
-//            System.out.println("You lost! Better chance next time.");
-//        }
-//    }
+    void adıletsGuess() {
+        Random random = new Random();
+        Scanner scan = new Scanner(System.in);
+        int secretNumber = random.nextInt(101);
+        int guessCount = 0;
+        System.out.print("Guess a random number between 0 and 100 (inclusive) ==> ");
+
+        for (int i = 0; i <5; i++) {
+
+            int guess = scan.nextInt();
+
+            if (guess == secretNumber) {
+                System.out.println("You won!!");
+                break;
+            } else if (guess > secretNumber && guess <= 100) {
+                System.out.println("Your number is big. Try a smaller number ==> ");
+                guessCount++;
+            } else if (guess < secretNumber && guess >= 0) {
+                System.out.println("Your number is too small. Try a bigger number ==> ");
+                guessCount++;
+            } else {
+                System.out.println("Please enter a valid number ==> ");
+                guessCount++;
+            }
+        }
+        if (guessCount == 5) {
+            System.out.println("You lost! Better chance next time.");
+        }
+    }
 
     public void letsGuess() {
     }
