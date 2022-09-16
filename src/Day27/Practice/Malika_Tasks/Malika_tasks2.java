@@ -45,7 +45,7 @@ public class Malika_tasks2 {
             String tempStorage = args[i].toLowerCase() + " = " + countOfAString + "; ";
             storageOutput += storageOutput.contains(tempStorage) ? "" : tempStorage;
         }
-        System.out.println(storageOutput);
+        System.out.println(storageOutput);   //First way
     }
 
     static String[] stringArraysToLowerCase(String... args){
