@@ -78,7 +78,7 @@ public class Arthur27Day {
     }
 
     static void howRpt(String... arg){
-        loop1:
+        loop1: // a b b a a a b b b a a a b b
         for (int i = 0; i < arg.length; i++) {
             loop2:
             for (int j = 0; j < i; j++) {

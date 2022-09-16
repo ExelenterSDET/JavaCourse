@@ -1,4 +1,4 @@
-package Malika_Tasks;
+package Day27.Practice.Malika_Tasks;
 
 public class Malika {
     public static void main(String[] args) {
