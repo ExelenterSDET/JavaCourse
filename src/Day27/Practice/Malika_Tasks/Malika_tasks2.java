@@ -22,9 +22,10 @@ public class Malika_tasks2 {
     static int howManyStrings(String s, String... args){
         int count = 0;
         for (String arg : args) {
-            if (stringsToLowerCaseAreEqual(s,arg)){
-                count++;
+            //if (stringsToLowerCaseAreEqual(s,arg)){
+                //count++;
             }
+            count += stringsAreEqual(str, arg)? 1:0; // ====>>> option 2
         }
         return count;
     }
