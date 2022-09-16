@@ -28,6 +28,7 @@ public class Malika_tasks2 {
         }
         return count;
     }
+
     //TASK3
     /*Create a void method which will have one parameter with String... args.
     Count how many times each string repeats.
