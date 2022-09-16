@@ -48,21 +48,41 @@ public class Task9 {
             guessNumber = input.replaceAll("[^\\d]", "").length() == input.length() ? Integer.parseInt(input) : -1;
 
             if ((guessNumber > 100 || guessNumber < 0) && counter != totalAttempts){
-                System.out.println("Please enter a valid number: ");
+                System.out.print("Please enter a valid number ");
             }
             else if (guessNumber < secretNumber && counter != totalAttempts){
-                System.out.print("Your number is small. Try a bigger number: ");
+                System.out.print("Your number is small. Try a bigger number ");
             } else if (guessNumber > secretNumber && counter != totalAttempts) {
-                System.out.print("Your number is big. Try a smaller number: ");
+                System.out.print("Your number is big. Try a smaller number ");
             } else if (guessNumber == secretNumber && counter != totalAttempts) {
                 System.out.print("You won. Congrats!");
                 System.out.println("=========================================");
                 break;
+            }
+            ///////Challenge 1///////////
+            if(counter != totalAttempts){
+                System.out.print(counter == totalAttempts-1 ?  "(Only one guess left): "
+                        : "(" + (totalAttempts - counter) + " guesses left): ");
             }
         }
         if (counter == totalAttempts && guessNumber != secretNumber){
             System.out.println("You lost! Better chance next time.");
             System.out.println("=========================================");
         }
+        playAgain();
+    }
+    void playAgain(){
+                String selection = null; // ""
+                do {
+                    System.out.println(selection == null ? "Do you want to play again?" : "Please enter a valid option!");
+                    System.out.println("Press 1 if you want to continue playing.");
+                    System.out.print("Press 0 if you do NOT want to continue: "); // 1
+                    Scanner scan = new Scanner(System.in);
+                    selection = scan.nextLine();
+                    System.out.println("=========================================");
+                }while (!selection.equals("0") && !selection.equals("1"));
+                if (selection.equals("1")){
+                    letsGuess();
+                }
     }
 }
