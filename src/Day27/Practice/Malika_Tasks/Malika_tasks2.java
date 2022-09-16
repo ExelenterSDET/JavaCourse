@@ -1,12 +1,14 @@
 package Day27.Practice.Malika_Tasks;
 
+import java.util.Arrays;
+
 public class Malika_tasks2 {
-    public static void main(String[] args) {
+
         //TASK1
         /*1. Create a method that will take two String parameters.
                 Method will convert both string to lower case and check if two string are equal.
         Return value is boolean.*/
-    }
+
     static boolean stringsToLowerCaseAreEqual(String str1, String str2){
         return str1.toLowerCase().equals(str2.toLowerCase());
 
@@ -34,6 +36,36 @@ public class Malika_tasks2 {
             aba = 5
             bad = 5
             cat = 4 */
+
+    static String[] stringArraysToLowerCase(String... args){
+        String [] arr =  new String[args.length];
+        for (int i = 0; i < args.length; i++) {
+            arr[i] =  args[i].toLowerCase();
+        }
+        return arr;
+    }
+
+    static void countEachString2(String... args){
+        String[] lowerCaseArr = stringArraysToLowerCase(args);
+        Arrays.sort(lowerCaseArr);
+        String storageOutput = "";
+        for (int i = 0; i < lowerCaseArr.length-1; i++) {
+            if(stringsToLowerCaseAreEqual(lowerCaseArr[i], lowerCaseArr[i+1])){
+                continue;
+            }
+            int count = howManyStrings(lowerCaseArr[i], lowerCaseArr);
+            storageOutput += lowerCaseArr[i].toLowerCase() + " = " + count + "; ";
+        }
+        storageOutput += lowerCaseArr[lowerCaseArr.length-1].toLowerCase() + " = " + howManyStrings(lowerCaseArr[lowerCaseArr.length-1], args) + "; ";
+        System.out.println(storageOutput);
+    }
+
+    public static void main(String[] args) {
+
+        howManyStrings("aba", "cat", "aba", "bad", "cAT", "cAt", "aba", "bad", "bad", "cat", "aba", "aBA", "bAD", "bAd");
+        countEachString2("Aba", "Cat", "aba", "Bad", "cAT", "cAt", "aba", "bad", "bad", "cat", "aba", "aBA", "bAD", "bAd");
+
+    }
 
 
 }
