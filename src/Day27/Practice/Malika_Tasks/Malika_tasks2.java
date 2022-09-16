@@ -37,6 +37,16 @@ public class Malika_tasks2 {
             bad = 5
             cat = 4 */
 
+    static void countEachString(String... args){
+        String storageOutput = "";
+        for (int i = 0; i < args.length; i++) {
+            int countOfAString = howManyStrings(args[i], args);
+            String tempStorage = args[i].toLowerCase() + " = " + countOfAString + "; ";
+            storageOutput += storageOutput.contains(tempStorage) ? "" : tempStorage;
+        }
+        System.out.println(storageOutput);
+    }
+
     static String[] stringArraysToLowerCase(String... args){
         String [] arr =  new String[args.length];
         for (int i = 0; i < args.length; i++) {
