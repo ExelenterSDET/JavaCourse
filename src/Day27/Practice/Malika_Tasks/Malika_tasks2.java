@@ -72,7 +72,7 @@ public class Malika_tasks2 {
 
     public static void main(String[] args) {
 
-        howManyStrings("aba", "cat", "aba", "bad", "cAT", "cAt", "aba", "bad", "bad", "cat", "aba", "aBA", "bAD", "bAd");
+        countEachString("aba", "cat", "aba", "bad", "cAT", "cAt", "aba", "bad", "bad", "cat", "aba", "aBA", "bAD", "bAd");
         countEachString2("Aba", "Cat", "aba", "Bad", "cAT", "cAt", "aba", "bad", "bad", "cat", "aba", "aBA", "bAD", "bAd");
 
     }
