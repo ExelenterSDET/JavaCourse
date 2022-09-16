@@ -68,7 +68,7 @@ public class Malika_tasks2 {
             storageOutput += lowerCaseArr[i].toLowerCase() + " = " + count + "; ";
         }
         storageOutput += lowerCaseArr[lowerCaseArr.length-1].toLowerCase() + " = " + howManyStrings(lowerCaseArr[lowerCaseArr.length-1], args) + "; ";
-        System.out.println(storageOutput); // Second way of solution
+        System.out.println(storageOutput); //Second way of solution
     }
 
     public static void main(String[] args) {
