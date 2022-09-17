@@ -2,7 +2,8 @@ package Day27.Practice;
 
 public class Tohir {
     public static void main(String[] args) {
-
+        Tohir tju = new Tohir();
+        tju.Returnoftotalnumberofstrings("nam","man","man","nam","man");
     }
 
     static boolean stringsAreEqual(String s1, String s2){
