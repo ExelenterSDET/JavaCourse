@@ -1,4 +1,4 @@
-package Day9.Practice;
+package Day9.Practice.DilnozaTasks;
 
 import java.util.Scanner;
 
