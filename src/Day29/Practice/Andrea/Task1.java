@@ -7,7 +7,7 @@ public class Task1 {
     public static void main(String[] args) {
         
         Task1 ts = new Task1();
-        ArrayList<String> list = new ArrayList<>(Arrays.asList("java is fun. i love java"));
+        ArrayList<String> list = new ArrayList<>(Arrays.asList("java","is","fun", "i", "love", "java"));
         System.out.println("list = " + list);
         ts.removeSmallWords(list);
         System.out.println("list = " + list);
@@ -18,10 +18,8 @@ public class Task1 {
         ArrayList<String> removeSmallWords (ArrayList<String> list){
 
         for (int i = 0; i < list.size(); i++) {
-
-               if (list.get(i).length()< 3){
-                    list.remove(i);
-                    
+            if (list.get(i).length()< 3){
+                list.remove(i);
                 i--;
             }
         }
