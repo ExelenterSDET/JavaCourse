@@ -76,7 +76,8 @@ public class Furkat {
 ============================================================================
 
              Task 3
-             Create a method which will take two lists as parameter and return a new list with all values of the first list that are not in the second list.
+             Create a method which will take two lists as parameter and return
+             a new list with all values of the first list that are not in the second list.
              Return ArrayList
 
              Example:
