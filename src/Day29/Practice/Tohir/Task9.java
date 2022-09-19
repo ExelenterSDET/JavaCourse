@@ -23,9 +23,6 @@ public class Task9 {
                 break;
             }
             i++;
-            /*else {
-                ret = num[num.length - 1];
-            }*/
         }
         if (ret==-1) {
             ret = num[num.length - 1];
