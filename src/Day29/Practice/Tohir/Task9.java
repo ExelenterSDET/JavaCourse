@@ -49,7 +49,7 @@ public class Task9 {
             }
 
         }*/
-    }
+
     //Task 9
     //
     //           Create a method that has an int[] as parameter.
