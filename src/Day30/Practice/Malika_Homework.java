@@ -46,6 +46,7 @@ public class Malika_Homework {
                 //strings.removeIf(str->str.length()<2); // ===>>>(2nd way with 'removeIf')
             }
         }
+        
         return listOfList;
     }
 }
