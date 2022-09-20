@@ -48,5 +48,4 @@ public class Malika_Homework {
         }
         return listOfList;
     }
-
 }
