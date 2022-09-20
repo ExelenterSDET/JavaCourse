@@ -36,6 +36,7 @@ public class Malika_Homework {
         System.out.println(arrayLists);
     }
     static ArrayList<ArrayList<String>> removeSizeLessThan2 (ArrayList<ArrayList<String>> listOfList){
+
         for (ArrayList<String> strings : listOfList) {
             for (int i = 0; i < strings.size(); i++) {
                 if (strings.get(i).length()<2) {
@@ -43,10 +44,10 @@ public class Malika_Homework {
                     i--;
 
                 }
+                
                 //strings.removeIf(str->str.length()<2); // ===>>>(2nd way with 'removeIf')
             }
         }
-
         return listOfList;
     }
 }
