@@ -1,8 +1,7 @@
-package Day29.Practice.Tohir;
+package Day29.Practice.Tohir1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 
 public class Task7 {

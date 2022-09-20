@@ -1,4 +1,3 @@
-package Day29.Practice.Tohir;
 
 import java.util.ArrayList;
 import java.util.List;
