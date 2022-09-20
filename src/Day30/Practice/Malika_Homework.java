@@ -19,11 +19,11 @@ public class Malika_Homework {
         ArrayList<ArrayList<String>> listOfLists = new ArrayList<ArrayList<String>>();
 
         ArrayList<String> classes = new ArrayList<>(Arrays.asList("Math", "Geography", "Biology","Chemistry", "Physics"));
-        ArrayList<String> Letters = new ArrayList<>(Arrays.asList("A", "B", "c", "d"));
+        ArrayList<String> letters = new ArrayList<>(Arrays.asList("A", "B", "c", "d"));
         ArrayList<String> daysOfTheWeek = new ArrayList<>(Arrays.asList("Mon", "Tue", "W", "Thu","F","Sat","Sun"));
 
         listOfLists.add(classes);
-        listOfLists.add(Letters);
+        listOfLists.add(letters);
         listOfLists.add(daysOfTheWeek);
 
         for (ArrayList<String> list : listOfLists){
@@ -44,7 +44,7 @@ public class Malika_Homework {
                     i--;
 
                 }
-                
+
                 //strings.removeIf(str->str.length()<2); // ===>>>(2nd way with 'removeIf')
             }
         }
