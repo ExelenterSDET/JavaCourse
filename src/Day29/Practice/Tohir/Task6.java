@@ -8,10 +8,10 @@ public class Task6 {
     public static void main(String[] args) {
         Task6 asg = new Task6();
         ArrayList<Integer> list =new ArrayList<Integer>(Arrays.asList(1, 3, 5, 4, 2, 3, 1, 2, 4, 6, 2, 5, 1));
-        System.out.println(asg.count(list));
+        asg.count(list);
 
     }
-     ArrayList<String> count(ArrayList<Integer> num)
+     void count(ArrayList<Integer> num)
     {
         ArrayList<Integer> newlist_1 = noduplicate(num);
         ArrayList<String> newlist_2 = new ArrayList<>();
@@ -26,7 +26,7 @@ public class Task6 {
             }
             newlist_2.add(String.valueOf(newlist_1.get(i))+"="+String.valueOf(count));
         }
-        return newlist_2;
+        System.out.println(newlist_2);
     }
     ArrayList<Integer> noduplicate(ArrayList<Integer> num)
     {
