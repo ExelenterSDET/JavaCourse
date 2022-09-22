@@ -24,7 +24,7 @@ public class VarArgsExample {
 //        return a+b;
 //    }
 //
-//    public static int getTotal(int a , int b, int c){
+//    public static int getTotal(int a, int b, int c){
 //        return a+b+c;
 //    }
 

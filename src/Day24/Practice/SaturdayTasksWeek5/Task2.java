@@ -26,7 +26,7 @@ public class Task2 {
 
         System.out.println(t2.formatString(str));
         System.out.println(Arrays.toString(t2.formatStringArray(strArr)));
-        System.out.printf(t2.longestStrings(strArr));
+        System.out.println(t2.longestStrings(strArr));
 
 
     }
