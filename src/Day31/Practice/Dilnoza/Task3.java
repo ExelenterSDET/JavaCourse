@@ -3,14 +3,12 @@ package Day31.Practice.Dilnoza;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Task2 {
+public class Task3 {
     /*
-  Create a method, which will have list of list of Strings as a parameter.
-  Convert all String character to upper case.
-  return the list of list of strings
-
-  9:30 - 9:40
-  */
+     Create a method, which will have list of list of Strings as a parameter.
+   Convert all String character to camel case.
+   return the list of list of strings
+    */
     public static void main(String[] args) {
         Task2 t2 = new Task2();
         ArrayList<String> countries = new ArrayList<>(Arrays.asList("USA","Canada","Mexico"));
@@ -23,17 +21,20 @@ public class Task2 {
 
 
     }
-    ArrayList<ArrayList<String>> listOfList (ArrayList<String> str1 ,ArrayList<String> str2, ArrayList<String> str3){
-        ArrayList<ArrayList<String>> newList= new ArrayList<>();
-        newList.add(str1);
-        newList.add(str2);
-        newList.add(str3);
-
-        for (int i = 0; i < newList.size(); i++) {
-            ArrayList<String>temp =new ArrayList<>();
+    ArrayList<ArrayList<String>> listOfList (ArrayList<ArrayList<String>> str1 ){
+        for (int i = 0; i < str1.size(); i++) {
+            for (int j = 0; j < str1.get(i).size(); j++) {
+                String str = str1.get(i).get(j);
+                str= str.substring(0,1).toUpperCase().substring(1).toLowerCase();
+                str1.get(i).set(j,str);
 
 
-        }
-        return newList;
+            }
+
+        }return str1;
     }
+
+
+
+
 }

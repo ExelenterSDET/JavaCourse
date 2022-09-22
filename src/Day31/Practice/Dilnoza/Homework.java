@@ -2,40 +2,56 @@ package Day31.Practice.Dilnoza;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class Homework {
-    /*
+     /*
 
-    Create listOfLists of String.
-   1. have at least 3 lists within listOfLists
-   2. Size of the list or values could be anything.
-   3. print the list of lists, using enhanced for loop or regular for loop.
+    Create a Set of Strings, named as classes.
+    Chemistry, Physics, Math
+    Add random names to the classes.
 
-   Create a method, which will remove all Strings, which size is less than 2.
-   Parameter and return type is List of Lists of String
+    Task1. How many students we have in total.
+    Task2. How many students are taking only Math
+    Task3. How many students are taking both Chemistry and Physics
+    Task4. How many students are taking all three classes.
 
-    */
+     */
+
+
     public static void main(String[] args) {
-        Homework hW = new Homework();
+        HashSet<String> Chemistry= new HashSet<>((Arrays.asList("Anthony","Dilnoza","Andrea","James","Peter","Kim")));
+        HashSet<String> Physics= new HashSet<>((Arrays.asList("James","Dilnoza","Andrea","James","Malika","Ufuk")));
+        HashSet<String> Math= new HashSet<>((Arrays.asList("Arthur","Kim","Malika","Anthony","Peter","Kim")));
 
-        ArrayList<ArrayList<String>> listOfLists = new ArrayList<>();
 
-        listOfLists.add(new ArrayList<>(Arrays.asList("I","Love","Java")));
-        listOfLists.add(new ArrayList<>(Arrays.asList("we","need","to","practice","more")));
-        listOfLists.add(new ArrayList<>(Arrays.asList("and","we","will","reach","our","goal","to","be","SDET")));
+        HashSet<String> total= new HashSet<>();
+        total.addAll(Chemistry);
+        total.addAll(Physics);
+        total.addAll(Math);
+        System.out.println("total number of students = " + total.size());
+        System.out.println("total = " + total);
+        System.out.println("=================================================");
 
-        ArrayList<ArrayList<String>> arrayLists = hW.removeIfLessThan2(listOfLists);
-        System.out.println("arrayLists = " + arrayLists);
+        HashSet<String> math= new HashSet<>();
+        math.addAll(Math);
+        System.out.println("math = " + math);
+        System.out.println("total number of students taking math = " + math.size());
+        System.out.println("=================================================");
+
+        HashSet<String> chemAndPhysics= new HashSet<>();
+        chemAndPhysics.addAll(Physics);
+        chemAndPhysics.addAll(Chemistry);
+        System.out.println("chemAndPhysics = " + chemAndPhysics);
+        System.out.println("total number of students taking chemAndPhysics = " + chemAndPhysics.size());
+
+
+        System.out.println("=================================================");
+
+
 
     }
-
-    ArrayList<ArrayList<String>> removeIfLessThan2( ArrayList<ArrayList<String>> lists){
-
-        for (ArrayList<String> list : lists) {
-            list.removeIf(num-> num.length()<=2);
-
-        }return lists;
     }
 
 
-}
+
