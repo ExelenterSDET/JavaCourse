@@ -2,38 +2,30 @@ package Day31.Practice.Dilnoza;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Task1 {
     public static void main(String[] args) {
+
 /*
-Create listOfLists of String.
-    1. have at least 3 lists within listOfLists
-    2. Size of the list or values could be anything.
-    3. print the list of lists, using enhanced for loop or regular for loop.
+   Create a method with parameter list of list of Integer.
+   Print max int
+    */
+            ArrayList<ArrayList<Integer>> numList = new ArrayList<>();
 
-    10 min - 9.02
- */
+            numList.add(new ArrayList<>(Arrays.asList(1, 5, 15, 26, 18, 35, 55)));
+            numList.add(new ArrayList<>(Arrays.asList(13, 5, 45, 21, 17, 33, 56)));
+            numList.add(new ArrayList<>(Arrays.asList(2, 3, 19, 22, 38, 85, 95)));
+            int max = getMax(numList);
+            System.out.println("max = " + max);
+        }
+        static int getMax (ArrayList < ArrayList < Integer >> numbers) {
+            int max = Integer.MIN_VALUE;
 
-        ArrayList<ArrayList<String>> listOfList= new ArrayList<>();
-        ArrayList<String> countries = new ArrayList<>(Arrays.asList("USA","Canada","Mexico"));
-        ArrayList<String> cities = new ArrayList<>(Arrays.asList("New York","Toronto","Mexico City"));
-        ArrayList<String> language = new ArrayList<>(Arrays.asList("English","French","Spanish"));
-
-        listOfList.add(countries);
-        listOfList.add(cities);
-        listOfList.add(language);
-
-        for (int i = 0; i < listOfList.size(); i++) {
-            for (int j = 0; j <listOfList.get(i).size() ; j++) {
-                System.out.print(listOfList.get(i).get(j)+" ");
+            for (ArrayList<Integer> number : numbers) {
+                max = max > Collections.max(number) ? max : Collections.max(number);
 
             }
-            System.out.println();
+            return max;
         }
-        System.out.println("listOfList = " + listOfList);
     }
-
-
-
-
-}
