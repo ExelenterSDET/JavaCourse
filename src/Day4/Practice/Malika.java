@@ -27,7 +27,7 @@ public class Malika {
 
 
         byte Malika = 30, Alihan = 11, Imran = 6, Mavlyuda = 26, Ikhtiiar = 21, Mama = 50, Dada = 54;
-        System.out.println("Malika = " + Malika);
+        System.out.println("Day30.Practice.Malika = " + Malika);
         System.out.println("Alihan = " + Alihan);
         System.out.println("Imran = " + Imran);
         System.out.println("Mavlyuda = " + Mavlyuda);

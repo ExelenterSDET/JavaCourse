@@ -11,7 +11,7 @@ public class Malika {
         System.out.println("ld = " + ld);
 
         //Task2
-        String str1 = "Hello, my name is Malika";
+        String str1 = "Hello, my name is Day30.Practice.Malika";
         String toLowerCase = str1.toLowerCase();
         System.out.println("toLowerCase = " + toLowerCase);
 
