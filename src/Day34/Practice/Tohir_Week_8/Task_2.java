@@ -6,38 +6,54 @@ import java.util.Map;
 public class Task_2 {
     public static void main(String[] args) {
         Task_2 asg = new Task_2();
-        String str = "madom";
+        String str = "eababd";
+        System.out.println(str);
+        System.out.println(asg.uniquelist(str));
         System.out.println(" = " + asg.sumofchars(str));
-       // System.out.println(" = " + asg.nonRepeated("merosadsadadz"));
+       // System.out.println(" = " + asg.nonRepeated(asg.sumofchars(str)));
 
     }
 
-    char nonRepeated(HashMap<String,Integer> charHash)
-    {
+    char nonRepeated(HashMap<String, Integer> charHash) {
         char c = '\0';
-        for (Map.Entry<String,Integer> row:charHash.entrySet())
-        {
-            if (row.getValue()==1)
-            {
+        for (Map.Entry<String, Integer> row : charHash.entrySet()) {
+            if (row.getValue() == 1) {
                 c = row.getKey().charAt(0);
                 break;
-            }
-            else
-            {
-            c = '$';
+            } else {
+                c = '$';
             }
         }
         return c;
     }
-    HashMap<String,Integer> sumofchars(String str)
+
+    HashMap<String, Integer> sumofchars(String str) {
+        HashMap<String, Integer> charHash0 = new HashMap<>();
+        String[] strsplit = str.split("");
+        String unique = uniquelist(str);
+        String[] uniqlist = unique.split("");
+        for (int i = 0; i <uniqlist.length; i++) {
+            charHash0.put(uniqlist[uniqlist.length-i-1],0);
+        }
+        /*HashMap<String, Integer> charHash = new HashMap<>();
+        for (int i = 0; i < strsplit.length; i++) {
+            charHash.computeIfPresent(strsplit[i], (k, v) -> v += 1);
+            charHash.computeIfAbsent(strsplit[i], k -> 1);
+        }*/
+        return charHash0;
+    }
+
+    String uniquelist(String str)
     {
         String[] strsplit = str.split("");
-        HashMap<String,Integer> charHash = new HashMap<>();
+        String str0 = "";
         for (int i = 0; i < strsplit.length; i++) {
-            charHash.computeIfPresent(strsplit[i],(k,v)->v+=1);
-            charHash.computeIfAbsent(strsplit[i],k->1);
+            if (str0.contains(strsplit[i])==false)
+            {
+                str0=str0.concat(strsplit[i]);;
+            }
         }
-        return charHash;
+        return str0;
     }
 }
 /*
