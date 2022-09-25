@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Task2 {
     public static void main(String[] args) {
-        //TASK2
+                             //TASK2
          /*
     Create a method, which will have list of list of Strings as a parameter.
     Convert all String character to upper case.
