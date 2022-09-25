@@ -24,9 +24,7 @@ public class Task3 {
 
         ArrayList<ArrayList<String>> arrayLists = toCamelCase(listoflists);
         System.out.print(arrayLists + " ");
-
     }
-
     static ArrayList<ArrayList<String >> toCamelCase(ArrayList<ArrayList<String>> listofList){
         for (int row = 0; row < listofList.size(); row++) {
             for (int column = 0; column < listofList.get(row).size(); column++) {
