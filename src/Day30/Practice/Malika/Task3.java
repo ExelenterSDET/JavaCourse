@@ -35,6 +35,5 @@ public class Task3 {
             }
         }
         return listofList;
-
     }
 }
