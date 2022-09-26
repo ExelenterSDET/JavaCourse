@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class  JavaMapLoops {
+public class JavaMapLoops {
     public static void main(String[] args) {
 
         HashMap<Integer, String> errorCodes = new HashMap<>();
