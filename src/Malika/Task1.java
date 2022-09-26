@@ -18,12 +18,10 @@ public class Task1 {
         int i = maxNum(list);
         System.out.println(i);
     }
-
     static int maxNum(ArrayList<ArrayList<Integer>> list){
         int max = Integer.MIN_VALUE;
         for (ArrayList<Integer> integers : list) {
             max = max> Collections.max(integers) ? max : Collections.max(integers);
-
         }
         return max;
     }
