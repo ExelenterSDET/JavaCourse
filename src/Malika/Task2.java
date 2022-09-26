@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class Task2 {
-    public static void main(String[] args) {
         //TASK2
     /* Create a method with the parameter and return type of List of List of Character.
     Method should return the characters in desc order
