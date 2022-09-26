@@ -1,24 +1,41 @@
 package Day34.Practice.Tohir_Week_8;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Task_3 {
     public static void main(String[] args) {
+        Task_3 asg = new Task_3();
+        ArrayList<Integer> numlist = new ArrayList<>(Arrays.asList(5,1,3,2,6,7,4,3));
+        System.out.println((asg.returnmax(numlist)));
+        System.out.println(asg.sortofdigits(numlist));
 
     }
-    /*ArrayList<Integer> sortofdigits(ArrayList<Integer> numArr)
-    {
+    ArrayList<Integer> sortofdigits(ArrayList<Integer> numArr) {
         ArrayList<Integer> sorted = new ArrayList<>();
-        sorted.add(numArr.get(0));
-        for (int i = 0; i < numArr.size(); i++) {
-            for (int i1 = 0; i1 < sorted.size(); i1++) {
-                int a = 0;
-                if (numArr.get(i) >sorted.get(i1)])
-                {
-                    sorted.s
-                }
+        int max = 0;
+        for (int inum = 0; inum < numArr.size(); inum++) {
+            sorted.add(returnmax(numArr).get(0));
+            numArr.remove(returnmax(numArr).get(1).intValue());
+            inum--;
+        }
+        return sorted;
+    }
+    ArrayList<Integer> returnmax(ArrayList<Integer> numArr)
+    {
+        int min = Integer.MAX_VALUE;
+        int index = 0;
+        for (int inum = 0; inum < numArr.size(); inum++) {
+            if (min>numArr.get(inum))
+            {
+                min = numArr.get(inum);
+                index = inum;
             }
-        }*/
+        }
+        ArrayList<Integer> maxlist = new ArrayList(Arrays.asList(min,index));
+        return maxlist;
+    }
 
     /*
         Task 3
