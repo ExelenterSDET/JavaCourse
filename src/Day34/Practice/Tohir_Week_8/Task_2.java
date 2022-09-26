@@ -1,16 +1,17 @@
 package Day34.Practice.Tohir_Week_8;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Task_2 {
     public static void main(String[] args) {
         Task_2 asg = new Task_2();
-        String str = "eababd";
+        String str = "mgmmmfffeeefgababdd";
         System.out.println(str);
         System.out.println(asg.uniquelist(str));
         System.out.println(" = " + asg.sumofchars(str));
-       // System.out.println(" = " + asg.nonRepeated(asg.sumofchars(str)));
+        System.out.println(" = " + asg.returnfirst(asg.sumofchars(str),str));
 
     }
 
@@ -28,19 +29,15 @@ public class Task_2 {
     }
 
     HashMap<String, Integer> sumofchars(String str) {
-        HashMap<String, Integer> charHash0 = new HashMap<>();
+
         String[] strsplit = str.split("");
-        String unique = uniquelist(str);
-        String[] uniqlist = unique.split("");
-        for (int i = 0; i <uniqlist.length; i++) {
-            charHash0.put(uniqlist[uniqlist.length-i-1],0);
-        }
-        /*HashMap<String, Integer> charHash = new HashMap<>();
+
+        HashMap<String, Integer> charHash = new HashMap<>();
         for (int i = 0; i < strsplit.length; i++) {
             charHash.computeIfPresent(strsplit[i], (k, v) -> v += 1);
             charHash.computeIfAbsent(strsplit[i], k -> 1);
-        }*/
-        return charHash0;
+        }
+        return charHash;
     }
 
     String uniquelist(String str)
@@ -54,6 +51,26 @@ public class Task_2 {
             }
         }
         return str0;
+    }
+    char returnfirst(HashMap<String, Integer> sumofchars, String uniquelist)
+    {
+        String retrn = "$";
+        String[] splituniq = uniquelist(uniquelist).split("");
+      outreloop:
+        for (String s : splituniq) {
+            Innerloop:
+            for (Map.Entry<String,Integer> row:sumofchars.entrySet())
+            {
+                if (s.equals(row.getKey())&&row.getValue()==1)
+                {
+                    retrn = row.getKey();
+                    break outreloop;
+                }
+
+            }
+        }
+        return retrn.charAt(0);
+        //return splituniq;
     }
 }
 /*
