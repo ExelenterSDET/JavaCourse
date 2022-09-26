@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class Task2 {
-        //TASK2
+                     //TASK2
     /* Create a method with the parameter and return type of List of List of Character.
     Method should return the characters in desc order
     */
@@ -24,7 +24,5 @@ public class Task2 {
 
             reverseList(list);
             System.out.println(list);
-
-
     }
 }
