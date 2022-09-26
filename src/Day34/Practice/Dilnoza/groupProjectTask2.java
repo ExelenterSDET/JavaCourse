@@ -23,7 +23,6 @@ public class groupProjectTask2 {
         System.out.println("firstUnique = " + t2.getFirstUnique(text));
 
     }
-
             Character getFirstUnique (String str) {
                 HashMap<Character, Integer> charList = new LinkedHashMap<>();
                 Character ch;
@@ -41,7 +40,7 @@ public class groupProjectTask2 {
                     }
                     return '$';
 
-
             }
-}
+
+    }
 
