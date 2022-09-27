@@ -13,7 +13,7 @@ public class SP4_Task10 {
         Return the name of the student, whose name is stored under the generated index.
         Print: WINNER IS + <<Student Name>>!!! (All capital letters)
         Example:
-        [Anthony, Arthur, Andrea, Malika, Bahridin, Sebahattin, Dilnoza, Mehmet, Tohir, Mustafa]
+        [Anthony, Arthur, Andrea, Day34.Practice.Malika, Bahridin, Sebahattin, Dilnoza, Mehmet, Tohir, Mustafa]
 
         if random number is 0, print WINNER IS ANTHONY!!!!
         */

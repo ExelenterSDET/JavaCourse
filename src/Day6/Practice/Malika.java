@@ -14,7 +14,7 @@ public class Malika {
         String s5 = s1.concat(s2+s3+s4);
         System.out.println(s5);
 
-        String FullName = "Malika Sadykova";
+        String FullName = "Day34.Practice.Malika Sadykova";
         int MyFullName = FullName.length();
         System.out.println("MyFullName = " + MyFullName);
 

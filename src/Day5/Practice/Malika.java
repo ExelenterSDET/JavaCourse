@@ -7,7 +7,7 @@ public class Malika {
                 Hello
                 Alexandra Abramov */
         System.out.println(" ");
-        System.out.println("Hello \nMalika Sadykova");
+        System.out.println("Hello \nDay34.Practice.Malika Sadykova");
 
 
                 /* 2. Write a Java program to print the sum of two numbers.
