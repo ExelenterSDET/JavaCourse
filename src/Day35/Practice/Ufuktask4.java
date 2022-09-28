@@ -10,7 +10,7 @@ math1([1, 2, 3]) → [20, 30, 40]
 math1([6, 8, 6, 8, 1]) → [70, 90, 70, 90, 20]
 math1([10]) → [110]
  */
-public class task4 {
+public class Ufuktask4 {
     public static void main(String[] args) {
 //        math1([10]);
         List a=new ArrayList<>(Arrays.asList(1,2,3,5));
