@@ -28,6 +28,7 @@ public class OOP3 {
 
         System.out.println(student.info.name);
         System.out.println(student.school.emailAddress);
+        System.out.println("================================================================");
 
         Student student2 = new Student();
         student2.school.schoolAddress = "Oxford st";
