@@ -1,28 +1,37 @@
-package Day36.Practice.Andrea;
+package Day36;
 
 public class Task {
-//not finished
-    class Employee{
 
-        String fullName;
-        int id;
-        Company company;
+    public static void main(String[] args) {
+        Company company = populateCompany("Sun Corp.", "www.suncorp.com", 43);
+        Employee employee = populateEmployee("Fred Flinstone", 38277, company);
+        printAllInfo(employee);
     }
-
-    class Company{
-        String coName;
-        String website;
-        int numOfEmployees;
-    }
-    public void populateEmployee(String name, int id, Company company) {
+    public static Employee populateEmployee(String name, int id, Company company) {
         Employee employee = new Employee();
         employee.fullName = name;
         employee.company = company;
         employee.id = id;
+        return employee;
     }
-
-    public static void main(String[] args) {
-
+    public static void printAllInfo (Employee emp){
+        System.out.println(emp.fullName + " " + emp.id + " " + emp.company);
     }
-
+    public static Company populateCompany(String coName, String website, int numEmps) {
+        Company company = new Company();
+        company.coName = coName;
+        company.website = website;
+        company.numOfEmployees = numEmps;
+        return company;
+    }
+}
+class Employee {
+    String fullName;
+    int id;
+    Company company = new Company();
+}
+class Company{
+    String coName;
+    String website;
+    int numOfEmployees;
 }
