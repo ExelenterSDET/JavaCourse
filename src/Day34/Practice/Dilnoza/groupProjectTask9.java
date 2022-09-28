@@ -1,9 +1,10 @@
-package Day34.Practice._09_26_2022_Mentoring_SP7;
+package Day34.Practice.Dilnoza;
 
 import java.util.HashMap;
 
-public class Task9 {
-        /*    Task 9
+public class groupProjectTask9 {
+    /*
+    Task 9
 
           Given a HashMap<String, String>.
           The map has keys and values as follow:
@@ -21,17 +22,27 @@ public class Task9 {
 
           Result:
           {"yogurt": "cherry", "spinach": "nuts", "ice cream": "cherry"}
-          */
+     */
 
-    static HashMap<String, String> modifyFood(HashMap<String, String> map){
-        if (map.containsKey("ice cream")){
-            map.computeIfAbsent("yogurt", k -> map.get("ice cream"));
+   static HashMap<String, String> modifyMap(HashMap<String , String> list){
+        if(list.containsKey("yogurt")){
+            list.computeIfAbsent("yogurt", k->list.get("ice cream"));}
+        if(list.containsKey("spinach")){
+            list.computeIfPresent("spinach",(k,v)-> v="cherry" );
         }
-        if (map.containsKey("spinach")){
-            map.computeIfPresent("spinach", (k, v) -> "nuts");
-        }
-        return map;
+        return list;
+
     }
+
+    public static void main(String[] args) {
+       HashMap<String, String>newMap= new HashMap<>();
+       newMap.put("spinach","dirt");
+       newMap.put("ice-cream", "cherry");
+        System.out.println(modifyMap(newMap));
+    }
+
+
+
 
 
 }
