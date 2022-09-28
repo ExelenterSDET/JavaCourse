@@ -11,7 +11,7 @@ wordMultiple(["c", "b", "a"]) → {"a": false, "b": false, "c": false}
 wordMultiple(["c", "c", "c", "c"]) → {"c": true}
 
  */
-public class task3 {
+public class UfukTask3 {
     public Map<String, Boolean> wordMultiple(String[] strings) {
         HashMap<String,Boolean> map=new HashMap<>();
         HashMap<String,Integer> map2=new HashMap<>();
