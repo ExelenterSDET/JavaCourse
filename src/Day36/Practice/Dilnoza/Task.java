@@ -30,6 +30,7 @@ static class Company{
         employee.company.salary= 100000.00;
         employee.company.empId=123456;
         System.out.println(employee.company.position+"\n"+employee.company.salary+"\n"+employee.company.empId);
+        System.out.println();
 
 
     }
