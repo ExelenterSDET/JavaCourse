@@ -11,7 +11,7 @@ public class Task10 {
         //        Return the name of the student, whose name is stored under the generated index.
         //        Print: WINNER IS + <<Student Name>>!!! (All capital letters)
         //        Example:
-        //        [Anthony, Arthur, Andrea, Day34.Practice.Malika, Bahridin, Sebahattin, Dilnoza, Mehmet, Day20.Practice.Tohir, Mustafa]
+        //        [Anthony, Arthur, Andrea, Day34.Day37.Practice.Malika, Bahridin, Sebahattin, Dilnoza, Mehmet, Day20.Day37.Practice.Tohir, Mustafa]
         //
         //        if random number is 0, print WINNER IS ANTHONY!!!!
         Scanner scan = new Scanner(System.in);
