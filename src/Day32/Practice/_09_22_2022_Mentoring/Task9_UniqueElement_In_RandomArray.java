@@ -17,15 +17,20 @@ public class Task9_UniqueElement_In_RandomArray {
     }
 
     static ArrayList<Integer> findUniqueNumber(Integer [] nums){
+
         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(nums));
         ArrayList<Integer> uniqueNumbersList = new ArrayList<>();
 
         for (int i = 0; i < list.size(); i++) {
+
             int value = list.get(i);
+
             list.removeIf(n -> n != value);
+
             if (list.size() == 1){
                 uniqueNumbersList.add(list.get(0));
             }
+
             list = new ArrayList<>(Arrays.asList(nums));
         }
         return uniqueNumbersList;

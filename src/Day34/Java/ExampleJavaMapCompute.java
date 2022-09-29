@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class ExampleJavaMapCompute {
     public static void main(String[] args) {
 
-        char[] arr = {'a','b', 'w', 'x', 'o','a','l', 'c', 'd', 'e','a','b', 'c', 'd', 'e','a','b', 'w', 'x', 'o','a','l', 'c', 'd', 'e','a','b', 'c', 'd', 'e'};
+        char[] arr = {'a','b', 'a', 'x', 'o','a','x', 'c', 'b', 'x'};
 
         // Task Return all characters and how much they are repeated.
 
@@ -14,13 +14,13 @@ public class ExampleJavaMapCompute {
             map.computeIfAbsent(arr[i], k-> 0);
             map.computeIfPresent(arr[i], (k,v)-> v+=1);
         }
-        System.out.println(map);
+        System.out.println("compute : " + map);
 
-//        Integer a = map.getOrDefault('c', 0);
-//        System.out.println(a);
-//
-//        Integer a1 = map.get('z');
-//        System.out.println(a1);
+       Integer a = map.getOrDefault('y', 0);
+       System.out.println(a);
+
+        Integer a1 = map.get('z');
+        System.out.println(a1);
 
         HashMap<Character, Integer> map2 = new HashMap<>();
         for (int i = 0; i < arr.length; i++) {
