@@ -1,0 +1,51 @@
+
+        Task 1.
+
+        Create class as a Product
+        productName
+        productQty
+        productPrice
+
+        Create class as a Consumer
+        name
+        balanceDue
+        Product
+
+        Task 2.
+        In Shop class create a method
+        which will set values to the
+        Product class attributes
+
+        Task 3.
+        In Shop class create a method which will return
+        total payment.
+
+        Task 4.
+        Create a method which will set values to the Consumer class attributes.
+        Note: balanceDue should not be hardcoded
+
+        Task 5.
+        Create a method to print all Consumer attributes.
+
+        Task 6.
+          In the main method create product, consumer and then print.
+
+        Task 7.
+        Modify the code so that if the product price
+        is less then 0,
+        default price should stay as 0;
+
+        Task 8.
+        Modify code so that Consumer
+        could buy more type of products.
+
+        Task 9.
+        Modify getPaymentTotal method,
+        so we can calculate total for all products
+
+        Task 10.
+        Modify the getConsumerDetails method so
+        that we can handle ArrayList<Product>
+
+        Task 11.
+        Modify print method.
