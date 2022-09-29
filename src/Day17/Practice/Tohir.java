@@ -1,7 +1,7 @@
-//package Day17.Practice;
+//package Day17.Day37.Practice;
 //
 //
-//public class Day20.Practice.Tohir {
+//public class Day20.Day37.Practice.Tohir {
 //
 //            public static void main(String[] args) {
 //            //1

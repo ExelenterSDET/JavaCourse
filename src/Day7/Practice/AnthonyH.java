@@ -17,7 +17,7 @@ public class AnthonyH {
         String str4 = str1.concat(str2).concat(str3);
         String str5 = str1.concat(str2+str3);
         System.out.println("TASK 1 V1 = "+ str4);
-        System.out.println("TASK 1 V2 (More Practice) = "+ str5);
+        System.out.println("TASK 1 V2 (More Day37.Practice) = "+ str5);
 
         //Task 2
         // Get of the length of the last string
@@ -46,7 +46,7 @@ public class AnthonyH {
         boolean isEmpty = str6.isEmpty();
         String str10 = "";
         boolean isEmpty2 = str10.isEmpty();
-        System.out.println("TASK 6 = isEmpty (More Practice) = " + isEmpty);
+        System.out.println("TASK 6 = isEmpty (More Day37.Practice) = " + isEmpty);
         System.out.println("TASK 6 = isEmpty  = " + isEmpty2);
 
 
@@ -58,7 +58,7 @@ public class AnthonyH {
         //Validate that they are equal.
         String str8 = "java";
         String str9 = "JAVA";
-        System.out.println("TASK 8 needs to equal (More Practice) = " +str8.equals(str9));
+        System.out.println("TASK 8 needs to equal (More Day37.Practice) = " +str8.equals(str9));
         System.out.println("TASK 8 needs to equal = " +str8.equalsIgnoreCase(str9));
 
     }
