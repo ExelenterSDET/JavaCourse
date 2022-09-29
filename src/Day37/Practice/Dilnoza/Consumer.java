@@ -7,4 +7,5 @@ public class Consumer {
     double balanceDue;
     Product product;
     ArrayList<Product> cart;
+    // test
 }
