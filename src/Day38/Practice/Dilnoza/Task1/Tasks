@@ -1,0 +1,40 @@
+
+Task 1
+
+From Shop class move getPaymentTotal
+method to Consumer class
+
+Task 2
+move getConsumerDetails method
+to Consumer clas
+
+Task 3
+move print product list cart to
+Product class
+
+Task 4
+move print consumer method
+to Consumer class
+
+
+Task 5
+Create an object Car
+and it will have at least 3 attributes.
+Brand
+Model
+Year
+Price
+
+Task 6
+Create a method to assign values to the class variables
+
+Task 7
+Create a class Dealership, create main method.
+In the main method initialize at least 2 instances of the Car class.
+
+Task 8
+In the Car class create a toString
+method to print all attributes of the Car class.
+
+Task 9
+In the dealership class print both cars objects.

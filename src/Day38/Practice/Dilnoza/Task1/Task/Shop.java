@@ -28,7 +28,7 @@ public class Shop {
         Consumer consumer2 = consumer.createConsumer2("John",cartOfConsumer2);
         consumer.toPrint(consumer2);
 
-     
+
         System.out.println("consumer2 = " + consumer2);
 
 
