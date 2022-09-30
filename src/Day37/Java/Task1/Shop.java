@@ -1,10 +1,13 @@
-package Day37.Task1;
+package Day37.Java.Task1;
+
+import Day37.Java.Task1.Consumer;
+import Day37.Java.Task1.Product;
 
 import java.util.ArrayList;
 
 public class Shop {
     public static void main(String[] args) {
-        ArrayList<Product> cart = new ArrayList<>();
+        ArrayList<Product> cart = new ArrayList<Product>();
         Product phone = getProductDetails("phone", 2, 500);
         Product laptop = getProductDetails("MacBook Pro", 1, 1700);
         Product tv = getProductDetails("LG", 1, 500);

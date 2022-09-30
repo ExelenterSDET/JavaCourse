@@ -1,4 +1,4 @@
-package Day37.Task1;
+package Day37.Java.Task1;
 
 public class Product {
     String productName;
