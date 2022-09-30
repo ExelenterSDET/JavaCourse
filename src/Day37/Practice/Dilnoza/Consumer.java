@@ -1,11 +1,11 @@
-package Day37.Task1;
+package Day37.Practice.Dilnoza;
 
 import java.util.ArrayList;
 
 public class Consumer {
     String name;
     double balanceDue;
-//    Product product;
-
+    Product product;
     ArrayList<Product> cart;
+    // test
 }

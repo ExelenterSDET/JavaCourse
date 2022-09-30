@@ -1,4 +1,4 @@
-package Day37.Homework;
+package Day37.Java.Homework;
 
 import java.util.ArrayList;
 import java.util.HashMap;

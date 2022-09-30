@@ -11,6 +11,7 @@ static class Employee{
     String name;
     String department;
     Company company = new Company();
+
 }
 
 static class Company{
