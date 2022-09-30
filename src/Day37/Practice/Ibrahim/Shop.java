@@ -116,11 +116,15 @@ public class Shop {
     }
 
     static void print(ArrayList<Product> cart){
-        for (Product product : cart) {
-            System.out.println(product.productName + " : "
-                                + product.productQty + " : $"
-                                + product.productPrice );
-        }
+//        for (Product product : cart) {
+//            System.out.println(product.productName + " : "
+//                                + product.productQty + " : $"
+//                                + product.productPrice );
+//        }
+
+        cart.forEach(a-> {System.out.println(a.productName + " : "
+                + a.productQty + " : $"
+                + a.productPrice );});
     }
 }
 
