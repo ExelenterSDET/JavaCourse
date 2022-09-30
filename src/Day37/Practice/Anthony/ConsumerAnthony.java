@@ -1,6 +1,6 @@
 package Day37.Practice.Anthony;
 
-import Day37.Task1.Product;
+import Day37.Java.Task1.Product;
 
 import java.util.ArrayList;
 
