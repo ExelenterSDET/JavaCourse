@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class Malika {
     public static void main(String[] args) {
-        //TASK1
+                        //TASK1
         /* Create a map that holds an error status codes */
 
         HashMap<Integer,String> errorCodes = new HashMap<>();
@@ -15,5 +15,6 @@ public class Malika {
         errorCodes.put(208, "ALREADY REPORTED");
 
         System.out.print(errorCodes);
+
     }
 }
