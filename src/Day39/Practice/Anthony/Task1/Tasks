@@ -1,0 +1,21 @@
+Task 1.
+Class animals with attributes as:
+name, speed, shortName
+
+Task 2.
+Create a void method to assign values to name and mileHspeed attributes
+
+task 3.
+Crate a void method which will assign values to shortname first character of attribute
+
+Task 4.
+Create a void method to assign values to name and mileHspeed attributes; make sure they are camelcase
+
+Task 5.
+Create a void method , to convert milesph to KmhSpeed
+
+Task 6.
+Create a toString to print all class attributes.
+
+Task 7.
+Class Zoo in the main method create two animal objects
