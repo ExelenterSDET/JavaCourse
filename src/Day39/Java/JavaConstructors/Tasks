@@ -1,0 +1,46 @@
+
+Task 1
+
+    Create a class Branch with attributes:
+
+    branchId
+    zipcode
+
+Task 2
+    Copy/Create Bank class from discord
+
+Task 3
+    Create default constructor.
+
+Task 4
+    Create constructor with the parameter branchId
+    and assign value to branchId attribute
+
+Task 5
+    Create constructor with both parameters
+    and assign value to all attributes
+
+Task 6
+    Modify last constructor from task 5
+    to have a constructor from task 4
+
+Task 7
+    create to String method.
+
+Task 8
+    create an attribute inside Bank class as List of Branch
+
+Task 9
+    create a constructor to assign value to all branches (Bank class)
+
+Task 10
+    modify constructor from task 9. reuse existing constructor.
+
+Task 11,
+    create a method which will print ArrayList<Branch>
+
+Task 12
+    in the bank class toString add print method.
+
+Task 12
+    in the city class create 2 branches and add them in to the list.
