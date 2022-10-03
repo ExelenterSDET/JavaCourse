@@ -24,7 +24,6 @@ public class Homework {
 
         System.out.println(compensation1);
     }
-
     static int getTotal (ArrayList<Integer> list){
         int total = 0;
         for (Integer integer : list) {
@@ -32,7 +31,6 @@ public class Homework {
         }
         return total;
     }
-
     static HashMap<String, Integer> getComp (HashMap<String, ArrayList<Integer>> map){
         HashMap<String, Integer> totalComp = new HashMap<>();
         for (Map.Entry<String, ArrayList<Integer>> row: map.entrySet()) {
