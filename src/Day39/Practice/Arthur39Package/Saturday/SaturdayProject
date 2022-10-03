@@ -1,0 +1,89 @@
+ Task 1
+        -   Create a class called ElectricityAccount with following attributes:
+            -- totalWph -> watt per hour
+            -- rate -> set default value to 0.7
+            -- bill
+        -	Create a class called Customer with following attributes:
+            -- name
+            -- age
+            -- areaZipCode
+            -- ElectricityAccount
+        -	Create a constructor in Customer class to initialize name, areaZipCode and ElectricityAccount.
+            -- If the areaZipcode is between 1000 (inclusive) and 3000 (exclusive) the Electricity rate should be set to 0.9
+            -- If areaZipCode is between 3000 (inclusive) and 4500 (exclusive) the Electricity rate should be set to 0.8
+            -- If areaZipCode is between 4500 (inclusive) and 7000 (exclusive) Electricity rate should be set to 0.6
+            -- Otherwise it should stay 0.7
+        -	Overload constructor where you can initialize all the fields in Customer class.
+        -	Create a method in Customer class, named 'consumeElectricity' with a parameter of 'wph'
+            Each time customer consumes electricity, it should add to totalWph of the customer
+            For example:
+            customer.consumeElectricity(100);
+            customer.consumeElectricity(200);
+            customer.consumeElectricity(50);
+            After calling methods above customer.totalWph should be equal to 350.
+        -	Create a method in ElectricityAccount class, named 'calculateBill' that calculates bill as bill = rate * totalWph
+            and returns bill as a double value.
+
+Task 2
+        - Create a class Lesson with fields:
+            String name
+            int credit
+            double grade
+
+        - Create a class Student with fields:
+            String fullName;
+            int studentId;
+            int maxCredit;
+            ArrayList<Lesson> lesson;
+            int totalCredit;
+
+        - In the Student class create a default constructor that will set:
+            *   maxCredit as 20,
+            *   totalCredit as 0
+            *   initialize the Lesson list as new ArrayList<>()
+
+        - In the Student class create another constructor that will set:
+            *   reuse default constructor
+            *   add value to fullName
+            *   add value to studentId
+
+        - In the Student class create a method named as takeLesson(Lesson lesson)
+            This method should:
+             *  add lesson to the Student Lesson list
+             *  add lesson credit to the totalCredit
+
+             notes:
+             *  You should be able to add lessons only up to allowed maxCredit amount (20 credit in total).
+                If, adding lesson credit amount to totalCredit is more then allowed maxCredit, then print:
+                "You can not add this lesson. Your maximum allowed credit is " + maxCredit + ". You credit availability is " + (maxCredit - totalCredit)
+
+             * You should be able to add lessons only if their credit is not less or equal 0.
+                If credit is less or equal 0, print:
+                "You can not add this lesson. Not valid credit amount."
+
+        - Create a School class and a main method.
+
+            Create 5 instances of Lesson class
+            Create 2 instances of Student class
+
+            Assign to Students some lessons
+            Print your result.
+
+Task 3
+        Create a method which will take a String as a parameter and return type is char.
+        This method should return a character which is mostly consecutively repeated.
+
+        Example:
+        String = "aaaa bb a ccccc ddd cc aaa ddddaac"
+        Output should be c.
+
+        Explanation: c continuously / without breaking is repeated 5 times. more then a, b, or d.
+
+        note: This is a most recent interview question!!!
+
+Task 4
+        Given an array of Strings.
+        Create a method, that will sort this array of Strings in ascending order.
+
+       !!!!!!!! NOTE: Do not use any of built-in sort methods => (Arrays.sort, Collection.sort etc.) !!!!!!!!!
+
