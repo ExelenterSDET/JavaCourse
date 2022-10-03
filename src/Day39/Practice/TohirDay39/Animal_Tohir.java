@@ -1,7 +1,6 @@
 package Day39.Practice.TohirDay39;
 
 public class Animal_Tohir {
-
     String Name;
     double Speed_km_h;
     int Speed_miles_h;
@@ -34,4 +33,6 @@ public class Animal_Tohir {
                 ", ShortName='" + ShortName + '\'' +
                 '}';
     }
+
+
 }

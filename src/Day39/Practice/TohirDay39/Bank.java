@@ -1,7 +1,5 @@
 package Day39.Practice.TohirDay39;
 
-import Day38.Practice.Day39.BranchofBank;
-
 import java.util.ArrayList;
 
 public class Bank {
@@ -10,7 +8,7 @@ public class Bank {
     String Web;
     boolean Trustable;
 
-    ArrayList<Day38.Practice.Day39.BranchofBank> Branchs;
+    ArrayList<BranchofBank> Branchs;
 
     public Bank()
     {
@@ -29,13 +27,13 @@ public class Bank {
         this.Trustable = trustable;
     }*/
 
-    public Bank(String name, String web, boolean trustable, ArrayList<Day38.Practice.Day39.BranchofBank> branchs) {
+    public Bank(String name, String web, boolean trustable, ArrayList<BranchofBank> branchs) {
         this.Name = name;
         this.Web = web;
         this.Trustable = trustable;
         this.Branchs = branchs;
     }
-    public Bank(String name, String web, ArrayList<Day38.Practice.Day39.BranchofBank> branchs) {
+    public Bank(String name, String web, ArrayList<BranchofBank> branchs) {
         this(name,web);
         this.Branchs = branchs;
     }
