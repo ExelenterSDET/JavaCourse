@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class Homework {
     public static void main(String[] args) {
-//TASK2
+                            //TASK2
         /*
        Create a method, which will return a map with position as a key, and total compensation as value
         Manager = 270000
