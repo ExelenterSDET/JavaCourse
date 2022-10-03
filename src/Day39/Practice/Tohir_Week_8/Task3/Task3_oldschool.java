@@ -15,15 +15,15 @@ public class Task3_oldschool {
         String [] strSplit = str.split("");
         char max = ' ';
         int maxint = 0;
-        for (int i = 0; i < strSplit.length; i++) {
-            int localmax = 0;
-            for (int i1 = i+1; i1 < strSplit.length; i1++) {
-                if (strSplit[i].equals(strSplit[i1]))
+        int localmax = 0;
+        for (int i = 0; i < strSplit.length-1; i++) {
+
+                if (strSplit[i].equals(strSplit[i+1]))
                 {
                     localmax++;
                 }
-            }
-            if (maxint<localmax)
+
+            else if (maxint<localmax)
             {
                 max =  strSplit[i].charAt(0);
                 maxint=localmax;
