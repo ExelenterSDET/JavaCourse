@@ -16,6 +16,7 @@ public class Tasks_Map_EntrySet {
         map.put("f", 60);
         map.put("g", 70);
 
+
         //TASK1
         /* Print all values */
 
