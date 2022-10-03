@@ -6,6 +6,7 @@ import java.util.Set;
 
 public class Tasks_Map_EntrySet {
     public static void main(String[] args) {
+
         HashMap<String,Integer> map = new HashMap<>();
         Set<Map.Entry<String, Integer>> entries = map.entrySet();
         map.put("a", 10);
@@ -16,7 +17,6 @@ public class Tasks_Map_EntrySet {
         map.put("f", 60);
         map.put("g", 70);
 
-
         //TASK1
         /* Print all values */
 
@@ -24,5 +24,6 @@ public class Tasks_Map_EntrySet {
             System.out.println(" value => " + row.getValue() + " ");
         }
         System.out.println();
+        
     }
 }
