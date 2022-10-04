@@ -1,0 +1,36 @@
+
+Task 1.
+create a separate package.
+
+Create a public class as City
+Create a default class as County
+
+create another package
+Create a class as Country
+inside a main method create instances for City and County classes.
+note: expect to have compile error when creating instance for class County
+
+Task 2
+City class:
+private String name
+private int areaZipCode
+
+Task 3
+create a default constructor (access modifier is private)
+assign default value to areaZipCode = 10020;
+
+Task 4
+Create another constructor. (access modifier is public)
+reuse default constructor.
+assign value to name attribute.
+
+Task 5
+Create a toString Method to print all attributes
+
+Task 6.
+in World class create an object for the City class.
+1. use default constructor and expect to see compile error.
+
+Task 7.
+Fix the error by calling second constructor.
+

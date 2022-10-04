@@ -1,0 +1,30 @@
+
+Task 1
+Create a class Rectangle.
+private length
+private width
+area
+perimeter
+
+Task 2
+Create a private method which will calculate a perimeter.
+
+Task 3
+Create a private method which will calculate an area.
+
+Task 4.
+Create a toString method, which will print only area and perimeter.
+
+Task 5.
+Create a constructor with parameters length and width.
+Access mod is default
+in the body call setPerimeter and setArea methods.
+
+Task 6.
+Under the same package create a class shapes
+create a main method
+create an rectangle class object.
+print
+
+
+
