@@ -1,7 +1,7 @@
 package Day40.Practice.Andrea.Practice.Task1b;
 
-import Day40.Practice.Task1.City;
-import Day40.Practice.Task1.County;
+import Day40.Java.Task1.Package1.City;
+import Day40.Java.Task1.Package1.County;
 
 public class Country {
 
