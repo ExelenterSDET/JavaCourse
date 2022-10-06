@@ -1,0 +1,19 @@
+
+Which of the below methods will let you run the code.
+
+1. static void main(String[] args){
+   } ==> X
+2. public void main(String[] args){
+   } ==> X
+3. public static void main(String args[]){
+   } ==> V
+4. public static void main(String[] arg){
+   } ==> V
+5. public static void main(String...){
+   } ==> X
+6. public static void main(String[] args){
+   } ==> V
+7. public void static main(String[] args){
+   } ==> X (Compile error.)
+8. public static void main(String... args){
+   } ==> V
