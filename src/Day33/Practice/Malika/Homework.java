@@ -1,4 +1,4 @@
-package Malika;
+package Day33.Practice.Malika;
 
 import java.util.ArrayList;
 import java.util.Arrays;
