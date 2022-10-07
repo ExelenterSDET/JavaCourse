@@ -1,4 +1,4 @@
-package Day43.Practice;
+package Day43.Practice.Dilnoza;
 
 public class Dilnoza {
 
