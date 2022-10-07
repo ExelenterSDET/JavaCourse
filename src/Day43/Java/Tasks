@@ -1,0 +1,44 @@
+
+Task 1
+in your folder create a file as JavaMath.java
+
+Task 2
+Create a class as JavaMath
+
+Task 3
+Create a main method
+
+Task 4
+Create a method which will convert String to Int.
+parameter String, return type int
+
+Task 5
+Get total of all args
+
+Task 6
+Compile your code
+javac JavaMath.java
+
+Task 7
+Run your code
+java JavaMath 10 20 35 45 26
+
+
+
+==============================================
+
+Task printName
+Create file as Name
+Create class as Name
+Create a main method
+in the main method you will print the name.
+Name should be printed in Camel Case format.
+
+
+
+
+
+
+
+
+
