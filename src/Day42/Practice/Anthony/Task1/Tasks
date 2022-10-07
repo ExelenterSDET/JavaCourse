@@ -1,0 +1,52 @@
+
+Task 1
+Create a class Car
+public price
+public brand
+public model
+public kmh
+public mph
+mphToKmh converter // decide which access modifier and non-access modifier you will give
+counter // decide which access modifier and non-access modifier you will give
+
+Task 2
+Create a default constructor.
+in the body increase counter.
+
+Task 3
+Create another constructor with parameters:
+brand, model, mph, price.
+note: in this parameter default parameter should be called.
+
+Task 4
+Create a method which will convert mph to kmh and assign value.
+note: provide right access modifier.
+
+Task 5.
+Create another attribute as inventoryNumber
+change counter to private
+
+Task 6.
+assign value to inventoryNumber from counter
+each time when object of the car class is created.
+
+Task 7.
+call method convertMphToKmh when object of the class is created.
+
+Task 8.
+Do not allow users to create an object without arguments.
+
+Task 9.
+Print attributes in the order
+inventoryNum, brand, model, mph, kmh, price
+
+Task 10.
+Create a class as Inventory
+Create an attribute as ArrayList<Car>.
+make it final
+
+Task 11
+in the main method create 3 objects of the car class.
+add them to the list
+And print
+
