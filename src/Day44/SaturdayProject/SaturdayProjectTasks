@@ -1,0 +1,145 @@
+Task 1
+-	Create a class called Employee with following attributes:
+    -- baseSalary
+    -- hourlyRate
+    -- numberOfEmployees (this field should be increased every time you create a new employee object - you shouldn't have a copy of this field for each object)
+-	Create a constructor in Employee class to initialize baseSalary and hourlyRate
+    -- baseSalary cannot be less than or equal to zero
+    -- hourlyRate cannot be less than zero
+    -- If these conditions are not true while initializing baseSalary and hourlyRate, then return hourlyRate = 14.20
+    Note: baseSalary = (hourlyRate * 40)
+
+-	Create a method in Employee class called calculateWage with a parameter extraHours.
+    And this method should calculate the wage (wage = baseSalary + (hourlyRate * extraHours) * 1.5)
+
+-	Create a method in Employee class (named as getNumberOfEmployees) to return the number of employees
+
+-   Create a class TestSalaries
+    -- create a test method to validate number of employees. (you should create multiple employees in the test method)
+    -- create a test method to validate the total wage for one employee
+    -- create another three methods, to validate any other possible scenarios
+
+Task 2
+    - Create a package crypto
+    - under crypto package create classes Bitcoin and Ethereum (Note: both classes are similar and have same type of attributes and methods)
+    - create following attributes:
+        String shortname   ---> should be accessible in all packages. should be class attribute. should be constant: "BTC" for Bitcoin and "ETH" for Ethereum
+        double totalAmount ---> should be accessible only within the same class and be a class attribute.
+        double totalValue  ---> should be accessible only within the same class and be a class attribute.
+        int transactionId ---> should be instance attribute and accessible in all packages.
+        double transactionAmount ---> should be instance attribute and accessible in all packages.
+        double price ---> should be accessible only within the same class. should be constant. Note: value for Bitcoin clas is 19540.09 and for Ethereum class is 1329.17
+        double transactionValue ---> should be instance attribute and accessible in all packages.
+
+    - create a constructor
+        -- parameter is transaction amount.
+        assign value to class transactionAmount attribute.
+        assign value to transactionValue (note: transactionValue = transactionAmount * price)
+        add value to the totalAmount (note: this field should always increase and represents totalAmount of all class transactions)
+        add value to the totalValue (note: this field should always increase and represents totalValue of all class transactions)
+
+    - create a static method getTotalAmount
+        should return totalAmount
+
+     - create a static method getTotalValue
+            should return totalValue
+
+     - create a print method.
+        print fields :
+         transactionId
+         transactionAmount
+         price
+         transactionValue
+
+         Example:
+         Bitcoin{transactionId=1, transactionAmount=1.2, price=19540.09, transactionValue=23448.108}
+         Ethereum{transactionId=2, transactionAmount=1.0, price=19540.09, transactionValue=19540.09}
+
+    - create another package as portfolio
+    - create a class BuyCrypto
+        transactionId
+        HashMap<String, ArrayList<Double>> portfolio
+        ArrayList<Bitcoin> bitcoinTransactions
+        ArrayList<Ethereum> ethereumTransactions
+
+        Note:
+        -- all attributes are accessible only within the class.
+        -- all attributes are class attributes.
+        -- except transactionId, all other attributes are constant
+
+    - create a constructor
+        -- parameters are String crypto and double amount
+        -- everytime when constructor is called, transactionId should be increased
+
+        -- if parameter String crypto is bitcoin:
+            --- create an object for Bitcoin
+            --- assign value to Bitcoin`s transactionId value of BuyCrypto`s transactionId
+            --- add object to the bitcoinTransactions list
+            --- update portfolio map as follows:
+                key should be Bitcoin shortname, value should be totalAmount and totalValue
+                Example:
+                Portfolio{{BTC=[1.2, 23448.108], ETH=[1.0, 1329.17]}}
+
+         -- if parameter String crypto is ethereum:
+                    --- create an object for Ethereum
+                    --- assign value to Ethereum`s transactionId value of BuyCrypto`s transactionId
+                    --- add object to the ethereumTransactions list
+                    --- update portfolio map as follows:
+                        key should be Ethereum shortname, value should be totalAmount and totalValue
+                        Example:
+                        Portfolio{{BTC=[1.2, 23448.108], ETH=[1.0, 1329.17]}}
+
+        -- Create a method to print only the Portfolio (you may use toString method)
+        -- Create a method to print all detailed crypto transactions. (print both ethereumTransactions and bitcoinTransactions lists)
+
+        Example:
+        Portfolio{{BTC=[1.2, 23448.108], ETH=[1.0, 1329.17]}}
+        ===============TRANSACTIONS==================
+        Bitcoin{transactionId=1, transactionAmount=1.2, price=19540.09, transactionValue=23448.108}
+        Ethereum{transactionId=2, transactionAmount=1.0, price=1329.17, transactionValue=1329.17}
+        ===============================================
+
+        -- Create another package portfolio
+        -- Create class CryptoMarket
+        -- in the main method perform multiple transactions with different cryptos by calling BuyCrypto class.
+        -- print the portfolio and detailed transactions.
+
+        -- Optional:
+            try to use Test methods and add some validations. (at least test three different scenarios)
+
+Task 3
+-   create class Numbers
+    -- create method named as "checkEvenNumber",which returns true if provided integer is even
+    -- create a method "evenNumbers" which will return all even number between 0 and 20
+
+-   create class TestNumbers
+    -- create method to check "checkEvenNumber" method
+    -- create a method to check if "evenNumbers" method works as expected
+    -- add another three methods, to validate any other possible scenarios
+
+Task 4
+    ======================practice String varargs===================================
+
+    1. Create a method which will print String varargs in the reversed order.
+       compile and run using terminal
+
+       Example:
+       Input: Java is Fun
+       Output: Fun is Java
+
+    2. Create a method which will return boolean
+       If provided String is palindrome, return true. Else, return false.
+       compile and run using terminal
+
+       Example:
+       Input: 123321
+       Output: true
+
+    3. Create a methods which will return total length of all Strings.
+       compile and run using terminal.
+
+        Example:
+        Input: Java is Fun 2005
+        Output:  4 + 2 + 3 + 4 = 13
+
+
