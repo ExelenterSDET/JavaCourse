@@ -1,0 +1,35 @@
+Task 1.
+Under the same folder (test)
+Create a class as JavaMath
+Create a Test class
+
+Task 2
+in JavaMath class create a static method getTotal.
+return value is int, parameter is int.
+get total of all numbers until the parameter.
+
+Example:
+5 => 1+2+3+4+5
+8 => 1+2+3+4+5+6+7+8
+
+Task 3
+In the Test class create a method which will
+validate your total is true.
+
+Task 4
+In the Test class create a method which will
+validate your total is not Equal.
+
+Task 5
+Validate total by using AssertTrue method.
+
+Task 6
+in the JavaMath class create a method
+return type is String
+parameter is ArrayList<String>, String firstLetter
+return the first String, which starts with parameter firstLetter
+if, there is no String which starts with firstLetter, return empty string
+
+Task 7.
+Create a test case to validate the getString()
+positive scenario to use notNull method.
