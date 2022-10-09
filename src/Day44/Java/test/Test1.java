@@ -3,12 +3,13 @@ package Day44.Java.test;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Test1 {
 
-   @Test
+@Test
    public void testTotalEquals(){
       int num = 5;
       int expected = (num*(num+1))/2;
