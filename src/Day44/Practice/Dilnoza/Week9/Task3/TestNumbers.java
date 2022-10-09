@@ -3,7 +3,7 @@ package Day44.Practice.Dilnoza.Week9.Task3;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static GroupProjects.Week9.Task3.Numbers.evenNumbers;
+
 
 public class TestNumbers {
     public boolean checkEvenNumbers(int num){
@@ -28,7 +28,7 @@ public class TestNumbers {
     @Test
     public void validateEvenNumbers(){
         int number = 20;
-        evenNumbers(number);
+        //evenNumbers(number);
         Assert.assertSame(20,number);
     }
 }

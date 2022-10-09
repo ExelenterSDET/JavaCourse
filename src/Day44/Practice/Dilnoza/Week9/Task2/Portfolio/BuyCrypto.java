@@ -1,7 +1,7 @@
 package Day44.Practice.Dilnoza.Week9.Task2.Portfolio;
 
-import GroupProjects.Week9.Task2.Crypto.Bitcoin;
-import GroupProjects.Week9.Task2.Crypto.Ethereum;
+import Day44.Practice.Dilnoza.Week9.Task2.Crypto.Bitcoin;
+import Day44.Practice.Dilnoza.Week9.Task2.Crypto.Ethereum;
 
 import java.util.ArrayList;
 import java.util.HashMap;
