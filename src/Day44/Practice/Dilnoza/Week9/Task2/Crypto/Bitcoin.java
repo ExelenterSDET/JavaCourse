@@ -9,6 +9,7 @@ public class Bitcoin {
     private static final double price = 19540.09;
     public double transactionValue;
 
+
     public Bitcoin(double transactionAmount) {
         this.transactionAmount = transactionAmount;
         transactionValue=transactionAmount*price;
