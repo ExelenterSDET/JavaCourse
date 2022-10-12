@@ -53,6 +53,7 @@ public class JavaUnitTest {
         ArrayList<Integer> list2 = new ArrayList<>();
         Assert.assertNotNull(list2);
     }
+    
     @Test
     public void assertNotEquals(){
         int num1 = 10;
