@@ -99,7 +99,7 @@ Task 2
         Ethereum{transactionId=2, transactionAmount=1.0, price=1329.17, transactionValue=1329.17}
         ===============================================
 
-        -- Create another package portfolio
+        -- Create another package CryptoMarket
         -- Create class CryptoMarket
         -- in the main method perform multiple transactions with different cryptos by calling BuyCrypto class.
         -- print the portfolio and detailed transactions.
