@@ -38,5 +38,4 @@ public class Test1 {
       ArrayList<String> list = new ArrayList<>(Arrays.asList("Bahriddin", "Arthur", "Anthony", "Sebahattin"));
       String str = JavaMath.getString(list, "A");
       Assert.assertNotNull(str);
-   }
-}
+   }}
