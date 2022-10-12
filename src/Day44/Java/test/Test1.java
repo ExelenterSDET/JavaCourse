@@ -40,4 +40,3 @@ public class Test1 {
       Assert.assertNotNull(str);
    }
 }
-
