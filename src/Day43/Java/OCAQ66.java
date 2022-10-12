@@ -21,7 +21,6 @@ public class OCAQ66 {
         System.out.println(check1.i + " :" + check2.i);
         System.out.println(check1.count + " :" + check2.count);
     }
-
     @Test
     public void testCount(){
         OCAQ66 check1 = new OCAQ66();
