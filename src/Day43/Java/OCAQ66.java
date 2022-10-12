@@ -1,4 +1,4 @@
-/*package Day43.Java;
+package Day43.Java;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -35,4 +35,4 @@ public class OCAQ66 {
         Assert.assertEquals(check1.i,5, "check1.i failed validation");
         Assert.assertEquals(check2.i,5, "check2.i failed validation");
     }
-}*/
+}
