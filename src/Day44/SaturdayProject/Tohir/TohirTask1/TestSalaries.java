@@ -1,4 +1,4 @@
-package Day44.SaturdayProject.TohirTask1;
+package Day44.SaturdayProject.Tohir.TohirTask1;
 
 public class TestSalaries {
     public static void main(String[] args) {
@@ -14,7 +14,4 @@ public class TestSalaries {
         System.out.println(employee1.getNumberOfEmployees());
 
     }
-
-
-
 }

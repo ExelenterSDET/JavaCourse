@@ -1,4 +1,4 @@
-package Day44.SaturdayProject.JavaUnitTest;
+package Day44.SaturdayProject.Tohir.JavaUnitTest;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

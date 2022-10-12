@@ -1,4 +1,4 @@
-package Day44.SaturdayProject.TohirTask3;
+package Day44.SaturdayProject.Tohir.TohirTask3;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package Day44.SaturdayProject.TohirTask1;
+package Day44.SaturdayProject.Tohir.TohirTask1;
 
 public class Employee {
     double Basesalary;
