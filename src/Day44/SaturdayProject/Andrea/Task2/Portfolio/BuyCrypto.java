@@ -1,10 +1,12 @@
 package Day44.SaturdayProject.Andrea.Task2.Portfolio;
 
 import Day44.SaturdayProject.Andrea.Task2.Crypto.Bitcoin;
+import Day44.SaturdayProject.Andrea.Task2.Crypto.CryptoCurrency;
 import Day44.SaturdayProject.Andrea.Task2.Crypto.Ethereum;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
 
 public class BuyCrypto {
 
@@ -13,8 +15,8 @@ public class BuyCrypto {
     private final ArrayList<Bitcoin> bitcoinTransactions = new ArrayList<>();
     private final ArrayList<Ethereum> ethereumTransactions = new ArrayList<>();
 
-    public BuyCrypto(String crypto, double amount) {
-        if (crypto.equalsIgnoreCase("BTC")){
+    public BuyCrypto(CryptoCurrency crypto, int amount) {
+        if (crypto.shortname.equalsIgnoreCase("BTC")){
             Bitcoin btc = new Bitcoin(amount);
             btc.transactionId = transactionId;
             bitcoinTransactions.add(0, btc);
@@ -23,7 +25,7 @@ public class BuyCrypto {
             btcArr.add(1, Bitcoin.getTotalValue());
             portfolio.put(btc.shortname,btcArr);
         }
-        else if (crypto.equalsIgnoreCase("ETH")){
+        else if (crypto.shortname.equalsIgnoreCase("ETH")){
             Ethereum eth = new Ethereum(amount);
             eth.transactionId = transactionId;
             ethereumTransactions.add(0, eth);
