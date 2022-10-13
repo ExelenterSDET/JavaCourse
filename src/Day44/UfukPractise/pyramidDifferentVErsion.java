@@ -1,6 +1,6 @@
 package Test1;
 
-public class piramitFarkliVersion {
+public class pyramidDifferentVErsion {
     public static void main(String[] args) {
     pyramid(5);
     }
