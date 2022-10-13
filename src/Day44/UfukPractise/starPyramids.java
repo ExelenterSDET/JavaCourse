@@ -1,6 +1,6 @@
-package Test1;
+package Day44.UfukPractise;
 
-public class yildizliPiramitYap {
+public class starPyramids {
     public static void main(String[] args) {
 
         //duz piramit

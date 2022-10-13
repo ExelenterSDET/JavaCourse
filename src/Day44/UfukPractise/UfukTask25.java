@@ -9,7 +9,7 @@ import java.util.Map;
           String = "aaaabbaccccccccccdddccaaaddddaac"
           Output should be c.
  */
-public class UfukTask26 {
+public class UfukTask25 {
     public static void main(String[] args) {
         cokTekrarBul("aabbaccccddc");
     }

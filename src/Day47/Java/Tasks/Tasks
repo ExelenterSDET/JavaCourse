@@ -1,0 +1,62 @@
+Task 1
+    Create an enum Drink
+    Cola Sprite Fanta Pepsi
+
+Task 2
+    Create class attributes as price and calories
+
+Task 3
+    cola
+    1.99
+    37
+
+    sprite
+    1.98
+    41
+
+    fanta
+    1.97
+    19
+
+    pepsi
+    1.99
+    27
+
+Task 4
+    Create getter methods for price and calories.
+
+Task 5
+    Create a print method for enums attributes.
+
+Task 6
+    Create a class BuyProduct
+    attributes are:
+    price
+    details
+    enum
+    qty
+    totalPrice
+
+Task 7
+    Create a constructor
+    Decide which parameters it should have
+
+Task 8
+    create To String method
+
+Task 9
+    create a Cart class
+    constant attribute as List of BuyProduct
+    balanceDue (decide whether it should be static or non static)
+
+Task 10
+    Create a method which will calculate balanceDue
+
+Task 11
+    Create a test method.
+    add some product.
+    validate balanceDue.
+
+
+
+
