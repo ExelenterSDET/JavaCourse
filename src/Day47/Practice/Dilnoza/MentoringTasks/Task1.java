@@ -1,4 +1,4 @@
-package Day47.Practice.Dilnoza.MentoringTask1;
+package Day47.Practice.Dilnoza.MentoringTasks;
 
 import java.util.ArrayList;
 import java.util.List;
