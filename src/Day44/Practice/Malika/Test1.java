@@ -15,13 +15,13 @@ public class Test1 {
         int actual = JavaMath.getTotal(num);
         Assert.assertEquals(actual,expected, "Totals do not match");
     }
+
     @Test
     public void testTotalNotEquals(){
         int num = 5;
         int expected = 0;
         int actual = JavaMath.getTotal(num);
         Assert.assertNotEquals(actual, expected, "Totals do match");
-
     }
 
     @Test
