@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Test1 {
+    
     @Test
     public void testTotalEquals(){
         int num = 5;
