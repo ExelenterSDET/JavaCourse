@@ -15,7 +15,7 @@ public class JavaMath {
         return total;
     }
 
-    
+
     @Test
     public static String returnFirstString(ArrayList<String> list, String firstLetter){
         for (String str : list){
