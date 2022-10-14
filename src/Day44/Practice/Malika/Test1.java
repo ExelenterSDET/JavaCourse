@@ -25,7 +25,6 @@ public class Test1 {
     }
 
     @Test
-
     public void testTotalTrue(){
         int num = 5;
         int expected = (num*(num+1))/2;;
@@ -40,5 +39,4 @@ public class Test1 {
         Assert.assertNotNull(str);
 
     }
-
 }
