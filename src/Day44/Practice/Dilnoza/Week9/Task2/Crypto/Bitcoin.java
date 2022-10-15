@@ -1,24 +1,27 @@
 package Day44.Practice.Dilnoza.Week9.Task2.Crypto;
 
 public class Bitcoin {
-    public final String shortName= "BTC";
+  public final String shortName= CryptoCurrency.BITCOIN.getShortName();
     private static double totalAmount;
     private static double totalValue;
     public  int transactionId;
     public  double transactionAmount;
-    private static final double price = 19540.09;
+  private static final double price = CryptoCurrency.BITCOIN.getPrice();
     public double transactionValue;
 
 
     public Bitcoin(double transactionAmount) {
+
         this.transactionAmount = transactionAmount;
-        transactionValue=transactionAmount*price;
+        transactionValue=transactionAmount*this.price;
         totalAmount+=transactionId;
         totalValue+=transactionAmount;
 
     }
 
-     public static double getTotalAmount(){
+
+
+    public static double getTotalAmount(){
         return totalAmount;
 }
 
@@ -31,7 +34,7 @@ public class Bitcoin {
         return "Bitcoin{" +
                 "transactionId=" + transactionId +
                 ", transactionAmount=" + transactionAmount +
-                ", price =" + price +
+                ", price =" + this.price +
                 ", transactionValue=" + transactionValue +
                 '}';
     }

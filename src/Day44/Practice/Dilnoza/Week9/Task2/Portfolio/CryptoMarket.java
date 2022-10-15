@@ -1,6 +1,7 @@
 package Day44.Practice.Dilnoza.Week9.Task2.Portfolio;
 
 import Day44.Practice.Dilnoza.Week9.Task2.Crypto.Bitcoin;
+import Day44.Practice.Dilnoza.Week9.Task2.Crypto.CryptoCurrency;
 import Day44.Practice.Dilnoza.Week9.Task2.Crypto.Ethereum;
 
 import java.util.ArrayList;
@@ -12,6 +13,18 @@ public class CryptoMarket {
     private final ArrayList<Bitcoin> bitcoinTransactions = new ArrayList<>();
     private final ArrayList<Ethereum> ethereumTransactions = new ArrayList<>();
 
+    @Override
+    public String toString() {
+        return "CryptoMarket{" +
+                "portfolio=" + portfolio +
+                ", bitcoinTransactions=" + bitcoinTransactions +
+                ", ethereumTransactions=" + ethereumTransactions +
+                '}';
+    }
+
+    public CryptoMarket() {
+    }
+
     public void BuyCrypto(String crypto, double amount) {
         if (crypto.equalsIgnoreCase("BTC")) {
             Bitcoin btc = new Bitcoin(amount);
@@ -20,23 +33,19 @@ public class CryptoMarket {
             ArrayList<Double> btcArr = new ArrayList<>();
             btcArr.add(0, Bitcoin.getTotalAmount());
             btcArr.add(1, Bitcoin.getTotalValue());
-            portfolio.put(btc.shortName, btcArr);
+            portfolio.put(CryptoCurrency.BITCOIN.shortName, btcArr);
         } else if (crypto.equalsIgnoreCase("ETH")) {
+            //portfolio.put(CryptoCurrency.ETHERIUM.getShortName(),CryptoCurrency.ETHERIUM.getPrice());
+
             Ethereum eth = new Ethereum(amount);
             eth.transactionId = transactionId;
             ethereumTransactions.add(0, eth);
             ArrayList<Double> ethArr = new ArrayList<>();
             ethArr.add(0, Ethereum.getTotalAmount());
             ethArr.add(1, Ethereum.getTotalValue());
-            portfolio.put(eth.shortName, ethArr);
+            portfolio.put(CryptoCurrency.BITCOIN.getShortName(), ethArr);
         }
         transactionId++;
     }
 
-    @Override
-    public String toString() {
-        return "BuyCrypto{" +
-                "portfolio=" + portfolio +
-                '}';
-    }
 }

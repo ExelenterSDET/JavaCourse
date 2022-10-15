@@ -2,18 +2,18 @@ package Day44.Practice.Dilnoza.Week9.Task2.Crypto;
 
 public class Ethereum {
 
-    public final String shortName= "ETH";
+   public final String shortName= CryptoCurrency.ETHERIUM.getShortName();
     private  static double totalAmount;
     private static double totalValue;
     public static int transactionId;
     public static double transactionAmount;
-    private static final double price = 1329.17;
+    private static final double price = CryptoCurrency.ETHERIUM.getPrice();
     public double transactionValue;
 
 
     public Ethereum (double transactionAmount) {
         this.transactionAmount = transactionAmount;
-        transactionValue=transactionAmount*price;
+        transactionValue=transactionAmount*this.price;
         totalAmount+=transactionId;
         totalValue+=transactionAmount;
 
@@ -32,7 +32,7 @@ public class Ethereum {
         return "Bitcoin{" +
                 "transactionId=" + transactionId +
                 ", transactionAmount=" + transactionAmount +
-                ", price =" + price +
+                ", price =" + this.price +
                 ", transactionValue=" + transactionValue +
                 '}';
     }
