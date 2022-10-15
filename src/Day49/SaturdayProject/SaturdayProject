@@ -19,11 +19,11 @@ public enum TransactionType {
 
 public class Transaction {
     1. Create following attributes:
-        double totalUSDAmount (should be class attribute and accessible only within the class)
-        HashMap<String, Integer> stock (should be class attribute, not editable and accessible only within the class)
+        double totalUSDAmount (should be class attribute and accessible for all classes)
+        HashMap<String, Integer> stock (should be class attribute, not editable and accessible for all classes)
         double transactionAmount (should be class object attribute and accessible only within the class)
 
-    2. Create a method named as addFunds. It should update totalUSDAmount.
+    2. Create a method named as addFunds. It should update totalUSDAmount. (should be class method and accessible for all classes)
 
     3. Create a method named as processTransaction (method should be a public class method)
        Parameters:
