@@ -18,7 +18,6 @@ public class Task1 {
           if key = e, add to value 50;
           if key = f, add to value 60;
           if key = g, add to value 70;
-
        */
     public static void main(String[] args) {
         HashMap<String, Integer> map = new HashMap<>();
@@ -33,7 +32,7 @@ public class Task1 {
         //map.forEach((key,value) -> System.out.print(key + "= " + value + "; "));
         System.out.println();
 
-        map.keySet().forEach((key) -> System.out.print(key+"= " + map.get(key) + "; "));
+       // map.keySet().forEach((key) -> System.out.print(key+"= " + map.get(key) + "; "));
         System.out.println();
 
         printMap2(map);
