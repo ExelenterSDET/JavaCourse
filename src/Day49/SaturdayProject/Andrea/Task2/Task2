@@ -1,0 +1,59 @@
+Task 2 ---- PRINT LUCKY USERS Who registered in the first 10 seconds ----
+
+public class User {
+    in this class you should have following attributes:
+
+    name ==> should be accessible in all classes.
+    LocalDateTime registration ==> should be accessible in all classes.
+
+    1. Create Constructor with parameter name.
+       -- in the constructor assign value to name, and create a current date.
+
+   2. Create toString method. Print only name.
+}
+
+
+public class Registration {
+    in this class you should have following attributes:
+    LocalDateTime startTime ==> should be accessible only in the current class
+
+    1. create a public method named as register.
+       -- method should return List of Users
+
+       -- In this method you should do:
+       -- initialize current time.
+
+          --- Use Scanner to enter name.
+          --- using this name, create a USER
+          --- add a USER object to the List of Users.
+          --- keep entering names in Scanner, until you type EXIT. If you type EXIT, exit the scanner.
+
+    2. create a method named as printHappyUsers.
+       Parameter: List of Users
+       Print only those users, who have been registered within first 10 seconds.
+
+ }
+
+public class Application {
+    In  this class you will have a main method and you will run and print your code.
+ }
+
+        Sample output:
+        **** SCANNER *****
+        Provide name to register:
+        Michael
+        John
+        Lewis
+        Stuart
+        James
+        Antony
+        Scott
+        Sarah
+        Exit
+        *******************
+
+        ****** print result *********
+        Happy users, that receive giveaways are:
+        Username='Michael, registered in 4 seconds
+        Username='John, registered in 6 seconds
+        *******************************
