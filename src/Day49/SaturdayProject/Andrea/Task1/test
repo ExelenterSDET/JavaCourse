@@ -1,0 +1,28 @@
+//one idea
+
+public void processTransaction(TransactionType type, Product product, int qty){
+        double temp = 0.0;
+        String sValue = "";
+        if(type==TransactionType.SELL){
+            temp = product.sellPrice * qty;
+            sellProduct(product, qty);
+            sValue = String.format("%.2f", temp);
+            transactionAmount = Double.parseDouble(sValue);
+        }
+        else if(type==TransactionType.BUY){
+            temp = product.buyPrice * qty;
+            buyProduct(product, qty);
+            sValue = String.format("%.2f", temp);
+            transactionAmount = Double.parseDouble(sValue);
+        }
+    }
+ public void processTransaction(TransactionType type, Product product, int qty){
+        if(type==TransactionType.SELL){
+            transactionAmount = product.sellPrice * qty;
+            sellProduct(product, qty);
+        }
+        else if(type==TransactionType.BUY){
+            transactionAmount = product.buyPrice * qty;
+            buyProduct(product, qty);
+        }
+    }

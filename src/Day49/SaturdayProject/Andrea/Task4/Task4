@@ -1,0 +1,20 @@
+Task 4
+    Create a method to convert date.
+    Return type = String
+    Parameter = String
+
+    Parameter String are in the following format:
+    "15th Oct 2022"
+
+    Note: all months are as follow:
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+
+    Examples:
+    Input: date = "20th Oct 2052"
+    Output: "2052-10-20"
+    ***********
+    Input: date = "6th Jun 1933"
+    Output: "1933-06-06"
+    ***********
+    Input: date = "26th May 1960"
+    Output: "1960-05-26"
