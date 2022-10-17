@@ -1,0 +1,206 @@
+********************************************************************************************************************
+
+Task 1.
+
+public enum Product {
+    1. In this enum you should create following attributes:
+        COMPUTER, name of product = "Macbook", buy price = 1000.50, sell price = 1200.30
+        PHONE, name of product = "Iphone", buy price = 800.40, sell price = 875.95,
+        TABLET, name of product = "IPad", buy price = 250, sell price = 285.35,
+        PLAYSTATION, name of product = "PS4", buy price = 450.10, sell price = 500.05;
+
+    2. Create Constructor, and getter methods.
+}
+
+public enum TransactionType {
+    1. In this enum you have to create following attributes:
+        BUY, SELL
+}
+
+public class Transaction {
+    1. Create following attributes:
+        double totalUSDAmount (should be class attribute and accessible for all classes)
+        HashMap<String, Integer> stock (should be class attribute, not editable and accessible for all classes)
+        double transactionAmount (should be class object attribute and accessible only within the class)
+
+    2. Create a method named as addFunds. It should update totalUSDAmount. (should be class method and accessible for all classes)
+
+    3. Create a method named as processTransaction (method should be a public class method)
+       Parameters:
+       TransactionType,
+       Product,
+       int qty
+       -- In this method, depending on TransactionType, you should assign value to transactionAmount.
+            --- if TransactionType is BUY, use Product buy price multiplied by qty
+            --- if TransactionType is SELL, use Product sell price multiplied by qty
+       -- Depending on TransactionType, you should switch between the methods buyProduct() or sellProduct().
+       Note: probably you should first create steps 5 and 6 (create methods buyProduct() and sellProduct())
+
+    4. Create a method named as buyProduct (method should be a private class object method)
+       Parameters:
+       Product
+       int qty
+       -- if qty is less or equal 0, then print Wrong amount and do not take any actions.
+           --- if qty is greater then 0, but transactionAmount is greater then totalUSDAmount, then print following:
+                "Your purchase amount is " + transactionAmount
+                "Your available balance is " + totalUSDAmount
+                "Not enough funds to cover your purchase. Please try less qty or add more funds. "
+           --- if not above conditions,
+                deduct transactionAmount from totalUSDAmount
+                update/add to stock MAP. Key -> Product`s name, Value -> qty
+
+    5. Create a method named as sellProduct (method should be a private class object method)
+       Parameters:
+       Product
+       int qty
+        -- if qty is less or equal 0, then print Wrong amount and do not take any actions.
+            -- in this method you will check the Map stock. If you don`t have Product in stock, or don`t have enough quantity to sell print:
+                "Your stock for " + {product name} + " is " + {product stock amount}
+                "You don`t have enough stock. Please try less qty"
+            --- if not above conditions,
+                add transactionAmount to totalUSDAmount
+                update/deduct from stock MAP. Key -> Product`s name, Value -> qty
+        }
+
+    6. Create a static print method.
+        Print TotalUSD, stock
+
+public class Shop {
+
+        Use this class for Test methods.
+
+        Test Case 1.
+        Add funds and validate it is updated.
+
+        Test Case 2.
+        Add funds, and buy 1 Product.
+        validate funds are updated and product has been added to the map.
+
+        Test Case 3.
+        Add funds, and buy 2 Products.
+        validate funds are updated and product has been added to the map.
+
+        Test Case 4.
+        Sell product and validate no updates happened in the funds and in the map.
+
+        Test Case 5.
+        Add funds.
+        Buy Multiple products.
+        Sell Multiple products.
+        Validate funds and your stock for each product.
+}
+********************************************************************************************************************
+
+Task 2 ---- PRINT LUCKY USERS Who registered in the first 10 seconds ----
+
+public class User {
+    in this class you should have following attributes:
+
+    name ==> should be accessible in all classes.
+    LocalDateTime registration ==> should be accessible in all classes.
+
+    1. Create Constructor with parameter name.
+       -- in the constructor assign value to name, and create a current date.
+
+   2. Create toString method. Print only name.
+}
+
+
+public class Registration {
+    in this class you should have following attributes:
+    LocalDateTime startTime ==> should be accessible only in the current class
+
+    1. create a public method named as register.
+       -- method should return List of Users
+
+       -- In this method you should do:
+       -- initialize current time.
+
+          --- Use Scanner to enter name.
+          --- using this name, create a USER
+          --- add a USER object to the List of Users.
+          --- keep entering names in Scanner, until you type EXIT. If you type EXIT, exit the scanner.
+
+    2. create a method named as printHappyUsers.
+       Parameter: List of Users
+       Print only those users, who have been registered within first 10 seconds.
+
+ }
+
+public class Application {
+    In  this class you will have a main method and you will run and print your code.
+ }
+
+        Sample output:
+        **** SCANNER *****
+        Provide name to register:
+        Michael
+        John
+        Lewis
+        Stuart
+        James
+        Antony
+        Scott
+        Sarah
+        Exit
+        *******************
+
+        ****** print result *********
+        Happy users, that receive giveaways are:
+        Username='Michael, registered in 4 seconds
+        Username='John, registered in 6 seconds
+        *******************************
+
+********************************************************************************************************************
+
+Task 3
+    Create a method named as getLatestDate.
+    Method returns LocalDate and has a parameter a List of Strings
+        -- List of Strings has dates in "dd MM, yyy" format.
+        -- return the latest Date.
+
+    Example:
+    List is as follow:
+
+                "10 05, 2005",
+                "08 03, 2015",
+                "12 04, 1900",
+                "09 11, 1850",
+                "03 02, 2022",
+                "24 02, 2020",
+                "22 03, 1988",
+                "19 10, 1999",
+                "17 09, 2001",
+                "22 05, 2022",
+                "10 01, 2011",
+                "29 04, 1999",
+                "13 08, 2006",
+                "09 11, 2009"
+
+    Output should be: 2022-05-22
+
+********************************************************************************************************************
+
+Task 4
+    Create a method to convert date.
+    Return type = String
+    Parameter = String
+
+    Parameter String are in the following format:
+    "15th Oct 2022"
+
+    Note: all months are as follow:
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+
+    Examples:
+    Input: date = "20th Oct 2052"
+    Output: "2052-10-20"
+    ***********
+    Input: date = "6th Jun 1933"
+    Output: "1933-06-06"
+    ***********
+    Input: date = "26th May 1960"
+    Output: "1960-05-26"
+
+
+
