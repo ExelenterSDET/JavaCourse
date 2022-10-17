@@ -1,3 +1,5 @@
+//one idea
+
 public void processTransaction(TransactionType type, Product product, int qty){
         double temp = 0.0;
         String sValue = "";

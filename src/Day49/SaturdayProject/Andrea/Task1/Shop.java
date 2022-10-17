@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import java.util.Arrays;
 
-import static SaturdayProject10.Task1.Transaction.*;
+
 
 public class Shop {
 
@@ -26,7 +26,7 @@ public class Shop {
         Transaction t2 = new Transaction();
         Integer quantityBeforeTransaction;
         if (Transaction.stock.containsKey(p2.getNameOfProduct())){
-            quantityBeforeTransaction = stock.get(p2.getNameOfProduct());
+            quantityBeforeTransaction = Transaction.stock.get(p2.getNameOfProduct());
         }
         else{
             quantityBeforeTransaction = 0;
@@ -35,10 +35,10 @@ public class Shop {
         t2.addFunds(1000);
         t2.processTransaction(TransactionType.BUY, p2, 1);
         Transaction.print(p2);
-        System.out.println(Arrays.asList(stock));
+        System.out.println(Arrays.asList(Transaction.stock));
         Assert.assertEquals(Transaction.getTotalUSDAmount(), usdAmountBeforeTransaction+750);
-        Integer quantity = stock.get(p2.getNameOfProduct()) + quantityBeforeTransaction;
-        Assert.assertEquals((stock.get(p2.getNameOfProduct())), quantity);
+        Integer quantity = Transaction.stock.get(p2.getNameOfProduct()) + quantityBeforeTransaction;
+        Assert.assertEquals((Transaction.stock.get(p2.getNameOfProduct())), quantity);
     }
 
     @Test
@@ -49,13 +49,13 @@ public class Shop {
         Integer quantityBeforeTransactionP3;
         Integer quantityBeforeTransactionP4;
         if (Transaction.stock.containsKey(p3.getNameOfProduct())){
-            quantityBeforeTransactionP3 = stock.get(p3.getNameOfProduct());
+            quantityBeforeTransactionP3 = Transaction.stock.get(p3.getNameOfProduct());
         }
         else{
             quantityBeforeTransactionP3 = 0;
         }
         if (Transaction.stock.containsKey(p4.getNameOfProduct())){
-            quantityBeforeTransactionP4 = stock.get(p4.getNameOfProduct());
+            quantityBeforeTransactionP4 = Transaction.stock.get(p4.getNameOfProduct());
         }
         else{
             quantityBeforeTransactionP4 = 0;
@@ -65,18 +65,18 @@ public class Shop {
         double usdAmountBeforeTransaction = Transaction.totalUSDAmount;
         System.out.println("usdAmountBeforeTransaction = " + usdAmountBeforeTransaction);
         t3.addFunds(2500);
-        System.out.println(getTotalUSDAmount());
+        System.out.println(Transaction.getTotalUSDAmount());
         t3.processTransaction(TransactionType.BUY, p3, 1);
         Transaction.print(p3);
         t3.processTransaction(TransactionType.BUY, p4, 1);
         Transaction.print(p4);
-        System.out.println(Arrays.asList(stock));
+        System.out.println(Arrays.asList(Transaction.stock));
         Assert.assertEquals(Transaction.getTotalUSDAmount(), usdAmountBeforeTransaction + 1449.6);
         Integer quantityP3 = quantityBeforeTransactionP3 +1;
         Integer quantityP4 = quantityBeforeTransactionP4 +1;
         System.out.println("Quantity before trans: " + quantityBeforeTransactionP3);
-        Assert.assertEquals(stock.get(p3.getNameOfProduct()), quantityP3);
-        Assert.assertEquals(stock.get(p4.getNameOfProduct()), quantityP4);
+        Assert.assertEquals(Transaction.stock.get(p3.getNameOfProduct()), quantityP3);
+        Assert.assertEquals(Transaction.stock.get(p4.getNameOfProduct()), quantityP4);
     }
 
     @Test
@@ -86,8 +86,8 @@ public class Shop {
         Integer quantityBeforeTransactionP5;
         double usdAmountBeforeTransaction = Transaction.totalUSDAmount;
         if (Transaction.stock.containsKey(p5.getNameOfProduct())){
-            quantityBeforeTransactionP5 = stock.get(p5.getNameOfProduct());
-            if (stock.get(p5.getNameOfProduct()) > 0){
+            quantityBeforeTransactionP5 = Transaction.stock.get(p5.getNameOfProduct());
+            if (Transaction.stock.get(p5.getNameOfProduct()) > 0){
                 t4.processTransaction(TransactionType.SELL, p5, 1);
             }
         }
@@ -95,11 +95,11 @@ public class Shop {
             quantityBeforeTransactionP5 = 0;
         }
         Transaction.print(p5);
-        System.out.println(getTotalUSDAmount());
+        System.out.println(Transaction.getTotalUSDAmount());
         Integer quantityP5 = quantityBeforeTransactionP5 -1;
         System.out.println("Quantity before trans: " + quantityBeforeTransactionP5);
-        System.out.println(Arrays.asList(stock));
-        Assert.assertEquals(stock.get(p5.getNameOfProduct()), quantityP5);
+        System.out.println(Arrays.asList(Transaction.stock));
+        Assert.assertEquals(Transaction.stock.get(p5.getNameOfProduct()), quantityP5);
         Assert.assertEquals(Transaction.getTotalUSDAmount(), usdAmountBeforeTransaction+285.35);
     }
 
@@ -116,19 +116,19 @@ public class Shop {
         Integer quantityBeforeTransactionP7;
         Integer quantityBeforeTransactionP8;
         if (Transaction.stock.containsKey(p6.getNameOfProduct())){
-            quantityBeforeTransactionP6 = stock.get(p6.getNameOfProduct());
+            quantityBeforeTransactionP6 = Transaction.stock.get(p6.getNameOfProduct());
         }
         else{
             quantityBeforeTransactionP6 = 0;
         }
         if (Transaction.stock.containsKey(p7.getNameOfProduct())){
-            quantityBeforeTransactionP7 = stock.get(p7.getNameOfProduct());
+            quantityBeforeTransactionP7 = Transaction.stock.get(p7.getNameOfProduct());
         }
         else{
             quantityBeforeTransactionP7 = 0;
         }
         if (Transaction.stock.containsKey(p8.getNameOfProduct())){
-            quantityBeforeTransactionP8 = stock.get(p8.getNameOfProduct());
+            quantityBeforeTransactionP8 = Transaction.stock.get(p8.getNameOfProduct());
         }
         else{
             quantityBeforeTransactionP8 = 0;
@@ -139,17 +139,17 @@ public class Shop {
         Transaction.print(p7);
         t5.processTransaction(TransactionType.BUY, p8, 1);
         Transaction.print(p8);
-        System.out.println(Arrays.asList(stock));
+        System.out.println(Arrays.asList(Transaction.stock));
         Integer quantityP6 = quantityBeforeTransactionP6 +1;
         Integer quantityP7 = quantityBeforeTransactionP7 +2;
         Integer quantityP8 = quantityBeforeTransactionP8 +1;
-        Assert.assertEquals(stock.get(p6.getNameOfProduct()), quantityP6);
-        Assert.assertEquals(stock.get(p7.getNameOfProduct()), quantityP7);
-        Assert.assertEquals(stock.get(p8.getNameOfProduct()), quantityP8);
+        Assert.assertEquals(Transaction.stock.get(p6.getNameOfProduct()), quantityP6);
+        Assert.assertEquals(Transaction.stock.get(p7.getNameOfProduct()), quantityP7);
+        Assert.assertEquals(Transaction.stock.get(p8.getNameOfProduct()), quantityP8);
         Integer quantityBeforeTransactionP9;
         if (Transaction.stock.containsKey(p9.getNameOfProduct())){
-            quantityBeforeTransactionP9 = stock.get(p9.getNameOfProduct());
-            if (stock.get(p9.getNameOfProduct()) > 0){
+            quantityBeforeTransactionP9 = Transaction.stock.get(p9.getNameOfProduct());
+            if (Transaction.stock.get(p9.getNameOfProduct()) > 0){
                 t5.processTransaction(TransactionType.SELL, p9, 1);
             }
         }
@@ -157,12 +157,12 @@ public class Shop {
             quantityBeforeTransactionP9 = 0;
         }
         Integer quantityP9 = quantityBeforeTransactionP9 -1;
-        Assert.assertEquals(stock.get(p9.getNameOfProduct()), quantityP9);
+        Assert.assertEquals(Transaction.stock.get(p9.getNameOfProduct()), quantityP9);
         System.out.println(usdAmountBeforeTransaction);
 
         String sValue = String.format("%.2f", usdAmountBeforeTransaction-1201.05);
         double newValue = Double.parseDouble(sValue);
-        Assert.assertEquals(getTotalUSDAmount(), newValue);
+        Assert.assertEquals(Transaction.getTotalUSDAmount(), newValue);
     }
 }
 

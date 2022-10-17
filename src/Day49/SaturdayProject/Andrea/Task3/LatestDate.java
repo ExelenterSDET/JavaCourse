@@ -1,5 +1,7 @@
 package Day49.SaturdayProject.Andrea.Task3;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -21,20 +23,18 @@ public class LatestDate {
                 "13 08, 2006",
                 "09 11, 2009"
        ));
- //       System.out.println(getLatestDate(dateList));
+        System.out.println(getLatestDate(dateList));
     }
-//    static LocalDate getLatestDate(ArrayList<String> list){
-//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MM, yyy");
-//        LocalDate latestDate = LocalDate.of(0,1,1);
-//        formatter.format(latestDate);
-//        for (String s : list) {
-//            LocalDate date = LocalDate.parse(s);
-//            date = formatter.format(date);
-//            if(date.isAfter(latestDate)){
-//                latestDate = date;
-//            }
-//
-//        }
-//        return latestDate;
-//    }
+    static LocalDate getLatestDate(ArrayList<String> list){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MM, yyy");
+        LocalDate latestDate = LocalDate.of(0,1,1);
+        formatter.format(latestDate);
+        for (String s : list) {
+            LocalDate date = LocalDate.parse(s, formatter);
+            if(date.isAfter(latestDate)){
+                latestDate = date;
+            }
+        }
+        return latestDate;
+    }
 }
