@@ -25,16 +25,22 @@ public class Transaction {
 
     2. Create a method named as addFunds. It should update totalUSDAmount. (should be class method and accessible for all classes)
 
-    3. Create a method named as processTransaction (method should be a public class method)
+    3. Create a method named as processTransaction
+    (method should be a public class method)
        Parameters:
        TransactionType,
        Product,
        int qty
-       -- In this method, depending on TransactionType, you should assign value to transactionAmount.
-            --- if TransactionType is BUY, use Product buy price multiplied by qty
-            --- if TransactionType is SELL, use Product sell price multiplied by qty
-       -- Depending on TransactionType, you should switch between the methods buyProduct() or sellProduct().
-       Note: probably you should first create steps 5 and 6 (create methods buyProduct() and sellProduct())
+       -- In this method, depending on TransactionType,
+       you should assign value to transactionAmount.
+            --- if TransactionType is BUY, use Product
+            buy price multiplied by qty
+            --- if TransactionType is SELL, use Product
+            sell price multiplied by qty
+       -- Depending on TransactionType, you should
+       switch between the methods buyProduct() or sellProduct().
+       Note: probably you should first create
+       steps 5 and 6 (create methods buyProduct() and sellProduct())
 
     4. Create a method named as buyProduct (method should be a private class object method)
        Parameters:
@@ -54,7 +60,9 @@ public class Transaction {
        Product
        int qty
         -- if qty is less or equal 0, then print Wrong amount and do not take any actions.
-            -- in this method you will check the Map stock. If you don`t have Product in stock, or don`t have enough quantity to sell print:
+            -- in this method you will check the Map stock.
+            If you don`t have Product in stock, or don`t have
+             enough quantity to sell print:
                 "Your stock for " + {product name} + " is " + {product stock amount}
                 "You don`t have enough stock. Please try less qty"
             --- if not above conditions,
