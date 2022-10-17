@@ -1,5 +1,7 @@
 package Day34.Practice.Malika;
 
+import java.util.HashMap;
+
 public class Task1 {
  /*
     Task1
@@ -18,4 +20,51 @@ public class Task1 {
        if key = g, add to value 70;
 
     */
+ public static void main(String[] args) {
+     HashMap<String,Integer> map = new HashMap<>();
+     map.put("a", 10);
+     map.put("b", 20);
+     map.put("c", 30);
+     map.put("d", 40);
+     map.put("e", 50);
+     map.put("f", 60);
+     map.put("g", 70);
+
+     //map.forEach((key,value) -> System.out.print(key + "= " + value + "; "));
+     System.out.println();
+
+     //map.keySet().forEach((key) -> System.out.print(key+"= " + map.get(key) + "; "));
+     System.out.println();
+
+     printMap2(map);
+
+ }
+
+
+    static void printMap(HashMap<String, Integer> map){
+        map.forEach((k, v) -> {
+            int addValue = addValue(k);
+            System.out.print(k + " = " + (v+addValue) + "; ");
+        });
+    }
+
+    static void printMap2(HashMap<String, Integer> map){
+        map.forEach((k, v) -> {
+            v += addValue(k);
+            map.replace(k, v);
+            System.out.print(k + " = " + v + "; "); // map.get(k) == v
+        });
+    }
+
+    static int addValue(String str){
+        switch(str){
+            case "a": return 10;
+            case "b": return 20;
+            case "c": return 30;
+            case "d": return 40;
+            case "e": return 50;
+            case "f": return 60;
+            case "g": return 70;
+        }
+        return 0;
 }
