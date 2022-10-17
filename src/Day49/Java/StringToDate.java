@@ -25,7 +25,7 @@ public class StringToDate {
         LocalDate parsedDate = LocalDate.parse(date, dateTimeFormatter);
         System.out.println("parsedDate = " + parsedDate);
 
-        LocalDate parsedDate1 = LocalDate.parse(date, DateTimeFormatter.ISO_DATE);
+         LocalDate parsedDate1 = LocalDate.parse(date, DateTimeFormatter.ISO_DATE);
         System.out.println("parsedDate1 = " + parsedDate1);
 
 
