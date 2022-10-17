@@ -37,9 +37,8 @@ public class Task1 {
         System.out.println();
 
         printMap2(map);
-
     }
-    
+
     static void printMap(HashMap<String, Integer> map) {
         map.forEach((k, v) -> {
             int addValue = addValue(k);
