@@ -33,7 +33,7 @@ public class Task1 {
         //map.forEach((key,value) -> System.out.print(key + "= " + value + "; "));
         System.out.println();
 
-        //map.keySet().forEach((key) -> System.out.print(key+"= " + map.get(key) + "; "));
+        map.keySet().forEach((key) -> System.out.print(key+"= " + map.get(key) + "; "));
         System.out.println();
 
         printMap2(map);
