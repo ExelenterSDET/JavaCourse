@@ -1,0 +1,28 @@
+
+Task 1.
+Create an enum Weather
+Cold, Warm, Hot
+
+Task 2.
+Create a class as Travel
+and create two methods.
+
+travelToOcean()
+travelToMountain()
+
+Task 3.
+You may travel to ocean if weather is hot.
+else, you should throw the UNCHECKED exception.
+
+Task 4.
+You may travel to mountain if weather is warm.
+else, you should throw the CHECKED exception.
+
+Task 5.
+Create a main method.
+first run the unchecked method.
+Handle the method with try catch.
+
+Task 6.
+run travelToMountain method.
+Handle the method with try catch and with throws signature
