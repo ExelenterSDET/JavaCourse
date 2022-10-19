@@ -9,7 +9,7 @@ public class OCAQuestions {
         LocalDate date = LocalDate.of(2020, Month.AUGUST,3);
         date.plusDays(40);
         date.plusMonths(3);
-        
+
         System.out.println(date.getYear()+" "+date.getMonth()+" "+date.getDayOfMonth());
         LocalDate date1 = LocalDate.of(3020, Calendar.APRIL,4);
         System.out.println(date1);
