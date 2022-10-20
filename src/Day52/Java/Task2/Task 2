@@ -1,0 +1,45 @@
+
+Task 2
+
+Part 1
+
+Create a class Movie
+ attributes
+ name
+ year of release
+ rent price
+ buy price
+
+Part 2
+Make all attributes private and create setters and getters methods
+
+Part 3
+You may create a overloaded constructor for some of the attributes.
+if you use attributes in the constructor, make those attributes read only.
+
+Part 4.
+Create a toString method.
+
+Part 5.
+Create a class Cinema.
+attribute
+List of Movies (private)
+
+Part 6.
+create:
+a method as addMovie
+a method as removeMovie
+getter for the listOfMovies.
+toString()
+
+Task 6.
+Create a class as Application
+create movies, create cinema instances. etc...
+
+
+
+
+
+
+
+
