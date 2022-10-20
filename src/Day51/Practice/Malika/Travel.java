@@ -11,7 +11,6 @@ public class Travel {
 
         } catch (RuntimeException ex){
             System.out.println(ex.getMessage());
-
         }
 
         try{ travelToMountain(Weather.COLD);

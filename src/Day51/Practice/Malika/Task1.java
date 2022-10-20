@@ -7,5 +7,5 @@ public class Task1 {
         COLD,
         WARM,
         HOT
-        
+
 }
