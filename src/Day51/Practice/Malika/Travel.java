@@ -35,5 +35,6 @@ public class Travel {
             throw new InterruptedException("You may not travel to mountain ");
         }
     }
+    
 }
 
