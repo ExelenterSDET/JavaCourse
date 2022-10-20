@@ -1,0 +1,31 @@
+Task 1
+
+1. Create a class as Student
+    1.a attributes: name and lastName
+    1.b constructor (overloaded)
+    1.c toString()
+
+2. Create a class School
+    2.a name
+        phoneNumber
+        email
+        address
+        schoolSize
+        List<Student>
+
+3. Create setters and getters for all attributes.
+
+4. Create a default Constructor
+
+5. change setListOfStudents to register.
+   add a logic, that will check if the schoolSize capacity allow to register student.
+   if it does not allow, throw an exception.
+
+6. toString method
+
+7. Create a School management class.
+    Create a School instance
+    initialize attributes.
+    add some students.
+
+
