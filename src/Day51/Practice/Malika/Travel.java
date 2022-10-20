@@ -28,14 +28,12 @@ public class Travel {
         }
     }
 
-    
     public static void travelToMountain (Weather weather) throws InterruptedException {
         if (weather == WARM) {
             System.out.println("You may travel to mountain ");
         } else {
             throw new InterruptedException("You may not travel to mountain ");
         }
-
     }
 }
 
