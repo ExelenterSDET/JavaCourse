@@ -4,6 +4,7 @@ import static Day51.Practice.Malika.Weather.HOT;
 import static Day51.Practice.Malika.Weather.WARM;
 
 public class Travel {
+    
     public static void main(String[] args) {
 
         try { travelToOcean(HOT);
@@ -35,6 +36,5 @@ public class Travel {
         }
 
     }
-
 }
 
