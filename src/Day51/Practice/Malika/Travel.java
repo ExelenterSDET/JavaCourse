@@ -13,6 +13,7 @@ public class Travel {
             System.out.println(ex.getMessage());
         }
 
+
         try{ travelToMountain(Weather.COLD);
 
         }catch (Exception ex){
@@ -27,6 +28,7 @@ public class Travel {
         }
     }
 
+    
     public static void travelToMountain (Weather weather) throws InterruptedException {
         if (weather == WARM) {
             System.out.println("You may travel to mountain ");
