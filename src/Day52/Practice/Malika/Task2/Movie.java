@@ -76,5 +76,6 @@ create movies, create cinema instances. etc...*/
     public void setBuyPrice(Double buyPrice) {
         this.buyPrice = buyPrice;
     }
+    
 }
 
