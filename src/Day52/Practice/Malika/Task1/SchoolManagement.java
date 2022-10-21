@@ -24,9 +24,5 @@ public class SchoolManagement {
         System.out.println(school.getEmail());
         System.out.println(school.getPhoneNumber());
         System.out.println(school.getListOfStudents());
-
-
-
     }
-
 }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class School {
     /*2. Create a class School
-   2.a name
+       a name
        phoneNumber
        email
        address
