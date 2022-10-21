@@ -19,8 +19,6 @@ public class Password {
             }
         }
         System.out.println("Your password is strong!");
-
-
     }
 
 
