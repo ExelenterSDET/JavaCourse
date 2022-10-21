@@ -16,6 +16,5 @@ public class Applicaion {
         System.out.println(Vatan);
         //Vatan.addMovie(batman2);
         System.out.println(Vatan);
-
     }
 }
