@@ -1,0 +1,215 @@
+Task 1
+
+Part 1.
+public class House {
+  /*
+     This class has the following fields (instance/object variables)
+     String ownerName
+     String condition
+     String houseType
+     int roomCount
+     int downPayment
+     int numberOfMonths
+     StatesTax statesTax
+  */
+
+
+    /*
+    Create the constructor helping initialization of the object variables.
+    (That is to say, the constructor takes all the object variables as parameter.)
+     */
+
+
+    /*
+    Make all the object variables read-only. (No setter method, only getter methods are defined.)
+     */
+
+}
+
+Part 2.
+public class HousePrices {
+   /*
+     This class is extending the House class
+     It has one int variable, let us name it as price
+     Make this variable (price) read-only
+     */
+
+
+    /*
+    Create the constructor of the class.
+    Calculate the price of the house by the help of the method calculateTotalPriceOfHouse below
+     */
+
+
+    /*
+        Create a method whose name is roomCountToPrice
+        no parameter
+        no return type
+        if the roomCount in the House class equal to 0
+            add 10000 to price
+        if the roomCount in the House class equal to 1
+            add 20000 to price
+        if the roomCount in the House class equal to 2
+            add 30000 to price
+        if the roomCount in the House class equal to 3
+            add 40000 to price
+        if the roomCount in the House class equal to 4
+            add 50000 to price
+        if the roomCount in the House class equal to 5
+            add 60000 to price
+     */
+
+
+    /*
+        Create a method whose name is conditionToPrice
+        no parameter
+        no return type
+            if condition variable in the House class equal to "New"
+                add 50000 to price
+            if condition variable in the House class equal to "LikeNew"
+                add 40000 to price
+            if condition variable in the House class equal to "Old"
+                add 30000 to price
+            if condition variable in the House class equal to "Renovation Required"
+                add 15000 to price
+     */
+
+
+    /*
+        Create a method whose name is houseTypeToPrice
+        no parameter
+        no return type
+            if HouseType is equal to "Apartment"
+                add 20000 to price
+            if HouseType is equal to "Condo"
+                add 30000 to price
+            if HouseType is equal to "House"
+                add 40000 to price
+     */
+
+
+    /*
+      Create a private method whose name is calculateTotalPriceOfHouse
+      return type is void
+      Calculate the tax and add it to the price
+      For the tax percentage use the StatesTax enum
+      The method returns the total price considering house type, condition, room count (by the help of the above methods) and tax
+     */
+
+
+
+    /*
+        Create a method whose name is getMonthlyPayment
+        return type is int
+        The method calculates and returns the monthly payment amount.
+        For the sake of the simplification of this exercise, just consider the mortgage rate as 0% (no mortgage rate)
+        But do not forget to subtract the down payment (from the Users class)
+     */
+
+}
+
+Part 3.
+/*
+     Create an enum class which name is StatesTax
+     Add Enumerated data types of
+     NEW_YORK with a tax rate of 20
+     NEW_JERSEY with a tax rate of 15
+     FLORIDA with a tax rate of 5
+     OHIO with a tax rate of 12
+     Create a getter method for the tax rate of data types
+     (Hint: You will need to create a private variable for the tax as well as the constructor of this enum class.)
+ */
+
+public enum StatesTax {
+
+}
+
+Part 4.
+    Create a Test Class
+    Copy/Paste the following tests.
+    Make sure you have 100% passing tests.
+    Additional | Optional: You may create couple of your own tests.
+
+    public class Test {
+
+        @Test
+        public void test1() {
+            HousePrices housePrices = new HousePrices(
+                    "Fernando",
+                    "New",
+                    "Apartment",
+                    3,
+                    40000,
+                    30,
+                    StatesTax.OHIO);
+            Assert.assertEquals("Testing the name of the owner name of the house:", "Fernando", housePrices.getOwnerName());
+            Assert.assertEquals("Testing the total price of the house:", 123200, housePrices.getPrice());
+            Assert.assertEquals("Testing the monthly payment of the house:",2773, housePrices.getMonthlyPayment());
+        }
+
+        @Test
+        public void test2() {
+            HousePrices housePrices = new HousePrices(
+                    "David",
+                    "LikeNew",
+                    "House",
+                    5,
+                    50000,
+                    30,
+                    StatesTax.NEW_YORK);
+            Assert.assertEquals("Testing the name of the owner name of the house:", "David", housePrices.getOwnerName());
+            Assert.assertEquals("Testing the total price of the house:", 168000, housePrices.getPrice());
+            Assert.assertEquals("Testing the monthly payment of the house:",3933, housePrices.getMonthlyPayment());
+        }
+
+        @Test
+        public void test3() {
+            HousePrices housePrices = new HousePrices(
+                    "Emily",
+                    "Old",
+                    "Condo",
+                    4,
+                    30000,
+                    36, StatesTax.FLORIDA);
+            Assert.assertEquals("Testing the name of the owner name of the house:", "Emily", housePrices.getOwnerName());
+            Assert.assertEquals("Testing the total price of the house:", 115500, housePrices.getPrice());
+            Assert.assertEquals("Testing the monthly payment of the house:",2375, housePrices.getMonthlyPayment());
+        }
+
+        @Test
+        public void test4() {
+            HousePrices housePrices = new HousePrices(
+                    "Rinda",
+                    "Renovation Required",
+                    "Condo",
+                    1,
+                    50000,
+                    35, StatesTax.NEW_JERSEY);
+            Assert.assertEquals("Testing the name of the owner name of the house:", "Rinda", housePrices.getOwnerName());
+            Assert.assertEquals("Testing the total price of the house:", 74750, housePrices.getPrice());
+            Assert.assertEquals("Testing the monthly payment of the house:",707, housePrices.getMonthlyPayment());
+        }
+    }
+
+Task 2.
+Part 1.
+    Create an application that helps you to buy a car & drive it:
+    Note: The design is provided in the SaturdayProjectExceptionPractice.PNG (under the same Practice folder)
+
+    Part 1.
+    Create class Vehicle, class Car, enum Condition, enum Weather, class Driver as per design ^.
+
+    Part 2.
+    In the class Driver:
+    Create a method buy
+    throw checked exception with an appropriate message, if the car condition is RESTORABLE or PARTS CAR
+
+    Part 2.
+    Create a method drive
+    throw unchecked/runtime exception if weather is SNOW, FROST or FOG
+
+    Part 3.
+    Create an App Class.
+    In the main method run buy() and drive() methods.
+    Use try and catch to handle the exceptions. 
+
