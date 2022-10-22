@@ -6,6 +6,7 @@ public class SDET extends Employee {
     public SDET(String name, double hourlyRate, int totalHours) {
         super(name, hourlyRate, totalHours);
         setOverTime();
+
         setSalary();
     }
     public void setOverTime(){
