@@ -1,0 +1,23 @@
+
+Task 2.
+Part 1.
+    Create an application that helps you to buy a car & drive it:
+    Note: The design is provided in the SaturdayProjectExceptionPractice.PNG (under the same Practice folder)
+
+    Part 1.
+    Create class Vehicle, class Car, enum Condition, enum Weather, class Driver as per design ^.
+
+    Part 2.
+    In the class Driver:
+    Create a method buy
+    throw checked exception with an appropriate message, if the car condition is RESTORABLE or PARTS CAR
+
+    Part 2.
+    Create a method drive
+    throw unchecked/runtime exception if weather is SNOW, FROST or FOG
+
+    Part 3.
+    Create an App Class.
+    In the main method run buy() and drive() methods.
+    Use try and catch to handle the exceptions.
+
