@@ -40,6 +40,7 @@ public void buy(Car car) throws Exception {
             case FOG:
                 throw new RuntimeException("The Fog is too thing. Zero visibility");
         }
+        System.out.println("test");
 
     }
 
