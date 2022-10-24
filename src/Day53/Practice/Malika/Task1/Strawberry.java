@@ -28,6 +28,7 @@ public class Strawberry extends Fruit{
                 ", color = '" + color + '\'' +
                 ", price = " + price +
                 '}';
+        
     }
 }
 
