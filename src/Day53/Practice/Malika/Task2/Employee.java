@@ -1,5 +1,4 @@
 package Day53.Practice.Malika.Task2;
-
 public class Employee {
     String name;
     double hourlyRate;
