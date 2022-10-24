@@ -31,7 +31,6 @@ public class App {
         strawberry.setBrand("Antalya");
         strawberry.setOwner("Demiral");
         System.out.println(strawberry);
-
     }
     }
 
