@@ -23,6 +23,7 @@ public class App {
         banana.setStoreAddress("Uskudar str. 15");
         System.out.println(banana);
 
+
         Strawberry strawberry = new Strawberry();
         strawberry.setName("Strawberry");
         strawberry.setColor("Red");
@@ -31,9 +32,6 @@ public class App {
         strawberry.setOwner("Demiral");
         System.out.println(strawberry);
 
-
-
-
     }
     }
-}
+

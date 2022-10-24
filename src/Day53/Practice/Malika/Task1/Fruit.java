@@ -1,5 +1,4 @@
 package Day53.Practice.Malika.Task1;
-
     public class Fruit {
         String name;
         String color;

@@ -1,7 +1,4 @@
 package Day53.Practice.Malika.Task1;
-
-
-
     public class Apple extends Fruit {
         int discount; // 15
 
