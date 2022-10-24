@@ -2,9 +2,7 @@ package Day53.Practice.Malika.Task2;
 
 public class SDET extends Employee {
     double overtime;
-
-
-
+    
     public SDET(String name, double hourlyRate, int totalHours) {
         super(name, hourlyRate, totalHours);
         setOverTime();
