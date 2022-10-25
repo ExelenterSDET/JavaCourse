@@ -1,0 +1,17 @@
+Task 1
+Part 1.
+Create a class Book
+- name, author, year.
+- constructor.
+- toString()
+
+Part2.
+Create a class Library.
+- create a final List of Books.
+- create static block. In the static block add couple of books into the list.
+
+Part3.
+create a method which will return the oldest book.
+
+Part4.
+in the main method print the oldest book.
