@@ -1,4 +1,4 @@
-package Day55.Part2Abstraction.Example1;
+package Day55.Practice.Tohir.Part2Abstraction.Example1;
 
 public class App {
     public static void main(String[] args) {
