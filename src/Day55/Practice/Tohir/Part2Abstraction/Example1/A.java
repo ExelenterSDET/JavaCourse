@@ -1,4 +1,4 @@
-package Day55.Part2Abstraction.Example1;
+package Day55.Practice.Tohir.Part2Abstraction.Example1;
 
 import javax.swing.plaf.PanelUI;
 
