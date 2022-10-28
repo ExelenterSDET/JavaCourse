@@ -2,7 +2,8 @@ package Day58.Practice.Dilnoza;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
+// move all zeroes to the end
+// {0,1,0,3,0,13} output should be {1,3,13,0,0,0}
 public class MentoringTask1 {
     public static void main(String[] args) {
 
