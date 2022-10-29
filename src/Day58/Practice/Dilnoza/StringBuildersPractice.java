@@ -14,5 +14,7 @@ public class StringBuildersPractice {
         System.out.println("sb = " + sb);
         sb.toString();
         System.out.println("sb = " + sb);
+        sb.reverse();
+        System.out.println("sb = " + sb);
     }
 }
