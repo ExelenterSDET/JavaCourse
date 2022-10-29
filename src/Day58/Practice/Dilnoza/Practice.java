@@ -1,10 +1,16 @@
 package Day58.Practice.Dilnoza;
 
+import java.util.Arrays;
+
 public class Practice {
     public static void main(String[] args) {
         int []numbers= {1, 5, 3, 6, 4 ,7, 8,15,25,35};
         int i = kthLargest(numbers, 2);
         System.out.println("i = " + i);
+        int []numbers1= {1, 5, 3, 6, 4 ,7, 8};
+        Arrays.sort(numbers1);
+        System.out.println("numbers1 = " + Integer.parseInt(String.valueOf(numbers1.length-1)));
+
 
 
     }
