@@ -57,11 +57,12 @@ public class Student {
         System.out.println("Your Balance is: $"+tuitionBalance);
     }
     public void payTuition(){
+        viewBalance();
         System.out.println("Enter your payment: $");
         Scanner scan = new Scanner(System.in);
         int payment = scan.nextInt();
         tuitionBalance=tuitionBalance-payment;
-        System.out.println("Thank you for your payments of: $" + payment);
+        System.out.print("Thank you for your payments of: $" + payment);
         viewBalance();
     }
 }
