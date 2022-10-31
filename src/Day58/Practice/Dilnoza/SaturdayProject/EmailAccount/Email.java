@@ -1,4 +1,4 @@
-package Day58.Practice.Dilnoza.SaturdayProject;
+package Day58.Practice.Dilnoza.SaturdayProject.EmailAccount;
 
 import java.util.Scanner;
 
@@ -77,4 +77,8 @@ public class Email {
     public String getAlternativeEmail() {return alternativeEmail;}
 
     public String getPassword() {return password;}
+
+
+
+
 }

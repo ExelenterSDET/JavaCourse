@@ -1,4 +1,6 @@
-package Day58.Practice.Dilnoza.SaturdayProject;
+package Day58.Practice.Dilnoza.SaturdayProject.EmailAccount;
+
+import Day58.Practice.Dilnoza.SaturdayProject.EmailAccount.Email;
 
 public class EmailApp {
     public static void main(String[] args) {
