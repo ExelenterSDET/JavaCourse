@@ -10,5 +10,11 @@ public class StringBuildersPractice {
         sb.insert(6,"Mama Mia");
         sb.reverse();
         System.out.println("sb = " + sb);
+        sb.length();
+        System.out.println("sb = " + sb);
+        sb.toString();
+        System.out.println("sb = " + sb);
+        sb.reverse();
+        System.out.println("sb = " + sb);
     }
 }
