@@ -2,6 +2,7 @@ package OCA.Q77;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 
 public class Q77 {
 
@@ -17,7 +18,6 @@ public class Q77 {
         Q77 q = new Q77();
         q.read(123);
         q.check(123);
-
 
     }
 }

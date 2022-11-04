@@ -1,9 +1,9 @@
-package Day55.Part1.StaticandInitializerBlocks;
+package Day55.Practice.Tohir.Part1.StaticandInitializerBlocks;
 
 import java.util.ArrayList;
 
 public class StaticBlock {
-    private static final ArrayList<Person> list1 = new ArrayList<>();
+    private static final ArrayList<Day55.Part1.StaticandInitializerBlocks.Person> list1 = new ArrayList<>();
 
     static {
         int a = 3;
